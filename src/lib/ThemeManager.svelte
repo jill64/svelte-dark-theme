@@ -3,6 +3,7 @@
   import { isDark } from '@jill64/svelte-device-theme'
   import cookie from 'cookie'
   import { setting } from './store/setting'
+  import { theme } from './store/theme'
   import type { StoredConfig } from './types/StoredConfig'
 
   $: if (browser) {
@@ -17,5 +18,10 @@
         maxAge: 60 * 60 * 24 * 365
       }
     )
+  }
+
+  $: if (browser) {
+    document.body.classList.toggle('dark', $theme === 'dark')
+    document.body.classList.toggle('light', $theme === 'light')
   }
 </script>
