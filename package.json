@@ -59,7 +59,7 @@
     "vite": "4.4.9"
   },
   "dependencies": {
-    "@jill64/attempt": "^0.1.1",
+    "@jill64/attempt": "^1.0.0",
     "@jill64/svelte-device-theme": "^0.1.0",
     "@jill64/typed-storage": "^0.1.4",
     "@sveltejs/kit": "^1.25.0",
