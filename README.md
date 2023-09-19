@@ -1,5 +1,7 @@
 # svelte-dark-theme
 
+![github-actions-ci](https://github.com/jill64/svelte-dark-theme/actions/workflows/ci.yml/badge.svg)
+
 Dark theme manager for Svelte
 
 ## Install
