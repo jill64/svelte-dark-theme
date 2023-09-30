@@ -61,7 +61,7 @@
   "dependencies": {
     "@jill64/attempt": "^1.0.0",
     "@jill64/svelte-device-theme": "^1.0.0",
-    "@jill64/typed-storage": "^0.3.0",
+    "@jill64/typed-storage": "^0.3.1",
     "@sveltejs/kit": "^1.25.0",
     "@types/cookie": "^0.5.2",
     "cookie": "^0.5.0",
