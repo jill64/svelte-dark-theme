@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.0.3
     version: 1.0.3(svelte@4.2.0)
   '@jill64/typed-storage':
-    specifier: 0.3.1
-    version: 0.3.1
+    specifier: 0.3.6
+    version: 0.3.6
   '@sveltejs/kit':
     specifier: 1.25.1
     version: 1.25.1(svelte@4.2.0)(vite@4.4.9)
@@ -335,8 +335,8 @@ packages:
       svelte: 4.2.0
     dev: false
 
-  /@jill64/typed-storage@0.3.1:
-    resolution: {integrity: sha512-FEOlyjsrJK544hg8qkS8bx3RmtQOf+d2iLs9Vh/TjAyWbGWrmEAM0M5//3jIuQlUlZaEQ1i7pKQN+xZJ5UBKqA==}
+  /@jill64/typed-storage@0.3.6:
+    resolution: {integrity: sha512-8jLbGM2h7pSqzL71i6hxEnJDkD/Mf2kh307MG8qsZigkO4ZT0FSynshmbG1JdiEK/xuNscOYyXNIKRx+09/XIg==}
     dependencies:
       '@jill64/attempt': 1.0.4
     dev: false
