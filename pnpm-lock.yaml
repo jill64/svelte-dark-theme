@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@jill64/attempt':
-    specifier: 1.0.0
-    version: 1.0.0
+    specifier: 1.0.4
+    version: 1.0.4
   '@jill64/svelte-device-theme':
-    specifier: 1.0.0
-    version: 1.0.0(svelte@4.2.0)
+    specifier: 1.0.3
+    version: 1.0.3(svelte@4.2.0)
   '@jill64/typed-storage':
     specifier: 0.3.1
     version: 0.3.1
@@ -321,14 +321,14 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@jill64/attempt@1.0.0:
-    resolution: {integrity: sha512-QnAULx7mLu1Xa6uz5m1/axPQHrg+tMmBXdp5AyTAx1DHKpZCRGp77tCrDfMPBSp8RI7s2kKudXHSi7uWifAl7g==}
+  /@jill64/attempt@1.0.4:
+    resolution: {integrity: sha512-RODmrUlp+3S8InuHucpGzRhTrfc6OpOrkmYf2R3VS3ZiJ9bojFboq8dlnjKoxU4nn4PXd9lLPLYIVURnZlsErQ==}
     dependencies:
       is-promise: 4.0.0
     dev: false
 
-  /@jill64/svelte-device-theme@1.0.0(svelte@4.2.0):
-    resolution: {integrity: sha512-YmRwyU05Q8CHHIp3kfcGomZe96vdvyzVaDQj5ICuoyPnIBbSfK/nWJ2xBuqBrg/vtO/TZlLaHiTD8hHtjgpcxA==}
+  /@jill64/svelte-device-theme@1.0.3(svelte@4.2.0):
+    resolution: {integrity: sha512-u1EJkSSq5JlaqVsji/Zh6Ks9Bxa7GHc/oKXQMUe9rYx9k7pvB/b098h7kwnw+PArevlHIoSvNOxMGNeebQlvQw==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
@@ -338,7 +338,7 @@ packages:
   /@jill64/typed-storage@0.3.1:
     resolution: {integrity: sha512-FEOlyjsrJK544hg8qkS8bx3RmtQOf+d2iLs9Vh/TjAyWbGWrmEAM0M5//3jIuQlUlZaEQ1i7pKQN+xZJ5UBKqA==}
     dependencies:
-      '@jill64/attempt': 1.0.0
+      '@jill64/attempt': 1.0.4
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
