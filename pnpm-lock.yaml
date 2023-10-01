@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@jill64/attempt':
-    specifier: 1.0.4
-    version: 1.0.4
+    specifier: 1.0.5
+    version: 1.0.5
   '@jill64/svelte-device-theme':
     specifier: 1.0.3
     version: 1.0.3(svelte@4.2.1)
@@ -321,8 +321,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@jill64/attempt@1.0.4:
-    resolution: {integrity: sha512-RODmrUlp+3S8InuHucpGzRhTrfc6OpOrkmYf2R3VS3ZiJ9bojFboq8dlnjKoxU4nn4PXd9lLPLYIVURnZlsErQ==}
+  /@jill64/attempt@1.0.5:
+    resolution: {integrity: sha512-NslJ7b5l8wfdJShSmZWXnAxBR63LulXD8Ba9pMIWz/fklPll2H8AVWf3VUdLfnTs2Mqm5uHFTq6WySTVG7ACbg==}
     dependencies:
       is-promise: 4.0.0
     dev: false
@@ -338,7 +338,7 @@ packages:
   /@jill64/typed-storage@0.3.8:
     resolution: {integrity: sha512-TOIxoVJWSPrkZzpcK6wFJBISse/fqEjpkwnjvmlDLraUbD8/5xRslM4BMV4BGY/u182zbqO+iaDE/MQRxkdlCQ==}
     dependencies:
-      '@jill64/attempt': 1.0.4
+      '@jill64/attempt': 1.0.5
     dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
