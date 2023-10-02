@@ -9,8 +9,8 @@ dependencies:
     specifier: 1.0.6
     version: 1.0.6
   '@jill64/svelte-device-theme':
-    specifier: 1.0.3
-    version: 1.0.3(svelte@4.2.1)
+    specifier: 1.0.4
+    version: 1.0.4(svelte@4.2.1)
   '@jill64/typed-storage':
     specifier: 0.3.10
     version: 0.3.10
@@ -327,8 +327,8 @@ packages:
       is-promise: 4.0.0
     dev: false
 
-  /@jill64/svelte-device-theme@1.0.3(svelte@4.2.1):
-    resolution: {integrity: sha512-u1EJkSSq5JlaqVsji/Zh6Ks9Bxa7GHc/oKXQMUe9rYx9k7pvB/b098h7kwnw+PArevlHIoSvNOxMGNeebQlvQw==}
+  /@jill64/svelte-device-theme@1.0.4(svelte@4.2.1):
+    resolution: {integrity: sha512-yYFll1sr8yU1dP6p5wbkgN22l36R7SqrZQtmrOu63ohUiYztdhLF2WyX8wEyJ8iBA3M2fBsfVP0qid/yf5hOAw==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
