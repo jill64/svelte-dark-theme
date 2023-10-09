@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-dark-theme",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Dark theme manager for Svelte ",
   "type": "module",
   "main": "dist/index.js",
@@ -57,7 +57,7 @@
     "@jill64/attempt": "1.0.6",
     "@jill64/svelte-device-theme": "1.0.4",
     "@jill64/typed-storage": "0.3.14",
-    "@sveltejs/kit": "1.25.1",
+    "@sveltejs/kit": "1.25.2",
     "@types/cookie": "0.5.2",
     "cookie": "0.5.0",
     "svelte": "4.2.1",
