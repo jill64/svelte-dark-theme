@@ -1,7 +1,6 @@
 # svelte-dark-theme
 
 [![npm](https://img.shields.io/npm/v/%40jill64%2Fsvelte-dark-theme)](https://npmjs.com/package/@jill64/svelte-dark-theme)
-[![CI](https://github.com/jill64/svelte-dark-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-dark-theme/actions/workflows/ci.yml)
 
 Dark theme manager for Svelte
 
