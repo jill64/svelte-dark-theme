@@ -1,7 +1,12 @@
 <script lang="ts">
-  import { setting, theme } from '$lib'
+  import { ThemeManager, setting, theme } from '$lib'
 </script>
 
+<ThemeManager />
+<header>
+  <h1>svelte-dark-theme</h1>
+  <a href="https://github.com/jill64/svelte-dark-theme">GitHub</a>
+</header>
 <div>Theme: {$theme}</div>
 <div>Setting: {$setting}</div>
 <label>
@@ -24,5 +29,18 @@
   :global(body.dark) {
     background-color: #222;
     color: #eee;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 </style>

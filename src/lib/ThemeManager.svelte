@@ -1,7 +1,7 @@
 <script lang="ts">
   import { browser } from '$app/environment'
   import { isDark } from '@jill64/svelte-device-theme'
-  import cookie from 'cookie'
+  import * as cookie from 'cookie'
   import { setting } from './store/setting'
   import { theme } from './store/theme'
   import type { StoredConfig } from './types/StoredConfig'
