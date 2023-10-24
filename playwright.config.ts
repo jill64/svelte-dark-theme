@@ -7,6 +7,7 @@ export default defineConfig({
   },
   testDir: 'tests',
   workers: '100%',
+  fullyParallel: true,
   projects: [
     {
       name: 'chromium',
