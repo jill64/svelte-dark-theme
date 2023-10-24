@@ -1,8 +1,5 @@
-# svelte-dark-theme
-
-[![npm](https://img.shields.io/npm/v/%40jill64%2Fsvelte-dark-theme)](https://npmjs.com/package/@jill64/svelte-dark-theme)
-
-Dark theme manager for Svelte
+<!----- BEGIN GHOST DOCS HEADER ----->
+<!----- END GHOST DOCS HEADER ----->
 
 ## Install
 
