@@ -6,9 +6,11 @@
   import { theme } from './store/theme'
   import type { StoredConfig } from './types/StoredConfig'
 
+  export let key = 'svelte-dark-theme'
+
   $: if (browser) {
     document.cookie = cookie.serialize(
-      'svelte-dark-theme',
+      key,
       JSON.stringify({
         setting: $setting,
         media: $isDark ? 'dark' : 'light'
