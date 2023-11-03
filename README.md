@@ -16,12 +16,6 @@ npm i @jill64/svelte-dark-theme
 
 <!----- END GHOST DOCS HEADER ----->
 
-## Install
-
-```sh
-npm i -D @jill64/svelte-dark-theme
-```
-
 ## Example
 
 ```svelte
