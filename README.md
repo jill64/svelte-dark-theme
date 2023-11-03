@@ -2,11 +2,11 @@
 
 # svelte-dark-theme
 
-[![npm-version](https://img.shields.io/npm/v/@jill64/svelte-dark-theme)](https://npmjs.com/package/@jill64/svelte-dark-theme) [![npm-license](https://img.shields.io/npm/l/@jill64/svelte-dark-theme)](https://npmjs.com/package/@jill64/svelte-dark-theme) [![npm-download-month](https://img.shields.io/npm/dm/@jill64/svelte-dark-theme)](https://npmjs.com/package/@jill64/svelte-dark-theme) [![npm-min-size](https://img.shields.io/bundlephobia/min/@jill64/svelte-dark-theme)](https://npmjs.com/package/@jill64/svelte-dark-theme) [![ci.yml](https://github.com/jill64/svelte-dark-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-dark-theme/actions/workflows/ci.yml) [![github-pages](https://img.shields.io/website?up_message=working&down_message=down&url=https%3A%2F%2Fjill64.github.io%2Fsvelte-dark-theme%2F)](https://jill64.github.io/svelte-dark-theme/)
+[![npm-version](https://img.shields.io/npm/v/@jill64/svelte-dark-theme)](https://npmjs.com/package/@jill64/svelte-dark-theme) [![npm-license](https://img.shields.io/npm/l/@jill64/svelte-dark-theme)](https://npmjs.com/package/@jill64/svelte-dark-theme) [![npm-download-month](https://img.shields.io/npm/dm/@jill64/svelte-dark-theme)](https://npmjs.com/package/@jill64/svelte-dark-theme) [![npm-min-size](https://img.shields.io/bundlephobia/min/@jill64/svelte-dark-theme)](https://npmjs.com/package/@jill64/svelte-dark-theme) [![ci.yml](https://github.com/jill64/svelte-dark-theme/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-dark-theme/actions/workflows/ci.yml) [![stackblitz](https://img.shields.io/badge/StackBlitz-jill64--svelte--dark--theme-dodgerblue)](https://stackblitz.com/edit/jill64-svelte-dark-theme?file=src%2Froutes%2FDemo.svelte)
 
 🔲 Dark theme manager for Svelte
 
-## [Demo](https://jill64.github.io/svelte-dark-theme/)
+## [Demo](https://stackblitz.com/edit/jill64-svelte-dark-theme?file=src%2Froutes%2FDemo.svelte)
 
 ## Install
 
