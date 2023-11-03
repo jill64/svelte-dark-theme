@@ -8,37 +8,35 @@ test('light-mode', async ({ page }) => {
     page.getByRole('heading', { name: 'svelte-dark-theme' })
   ).toBeVisible()
 
-  expect(await page.locator('body').getAttribute('class')).toContain('light')
-
   await expect(page.getByText('Theme: light')).toBeVisible()
   await expect(page.getByText('Theme: dark')).not.toBeVisible()
   await expect(page.getByText('Setting: light')).not.toBeVisible()
   await expect(page.getByText('Setting: dark')).not.toBeVisible()
   await expect(page.getByText('Setting: sync')).toBeVisible()
+
+  expect(await page.locator('body').getAttribute('class')).toContain('light')
 
   await page.getByLabel('Dark').click()
 
-  expect(await page.locator('body').getAttribute('class')).toContain('dark')
-
   await expect(page.getByText('Theme: light')).not.toBeVisible()
   await expect(page.getByText('Theme: dark')).toBeVisible()
   await expect(page.getByText('Setting: light')).not.toBeVisible()
   await expect(page.getByText('Setting: dark')).toBeVisible()
   await expect(page.getByText('Setting: sync')).not.toBeVisible()
+
+  expect(await page.locator('body').getAttribute('class')).toContain('dark')
 
   await page.reload()
 
-  expect(await page.locator('body').getAttribute('class')).toContain('dark')
-
   await expect(page.getByText('Theme: light')).not.toBeVisible()
   await expect(page.getByText('Theme: dark')).toBeVisible()
   await expect(page.getByText('Setting: light')).not.toBeVisible()
   await expect(page.getByText('Setting: dark')).toBeVisible()
   await expect(page.getByText('Setting: sync')).not.toBeVisible()
 
-  await page.getByLabel('Light').click()
+  expect(await page.locator('body').getAttribute('class')).toContain('dark')
 
-  expect(await page.locator('body').getAttribute('class')).toContain('light')
+  await page.getByLabel('Light').click()
 
   await expect(page.getByText('Theme: light')).toBeVisible()
   await expect(page.getByText('Theme: dark')).not.toBeVisible()
@@ -46,9 +44,9 @@ test('light-mode', async ({ page }) => {
   await expect(page.getByText('Setting: dark')).not.toBeVisible()
   await expect(page.getByText('Setting: sync')).not.toBeVisible()
 
-  await page.reload()
-
   expect(await page.locator('body').getAttribute('class')).toContain('light')
+
+  await page.reload()
 
   await expect(page.getByText('Theme: light')).toBeVisible()
   await expect(page.getByText('Theme: Dark')).not.toBeVisible()
@@ -56,13 +54,15 @@ test('light-mode', async ({ page }) => {
   await expect(page.getByText('Setting: dark')).not.toBeVisible()
   await expect(page.getByText('Setting: sync')).not.toBeVisible()
 
-  await page.getByLabel('Sync').click()
-
   expect(await page.locator('body').getAttribute('class')).toContain('light')
+
+  await page.getByLabel('Sync').click()
 
   await expect(page.getByText('Theme: light')).toBeVisible()
   await expect(page.getByText('Theme: Dark')).not.toBeVisible()
   await expect(page.getByText('Setting: light')).not.toBeVisible()
   await expect(page.getByText('Setting: dark')).not.toBeVisible()
   await expect(page.getByText('Setting: sync')).toBeVisible()
+
+  expect(await page.locator('body').getAttribute('class')).toContain('light')
 })
