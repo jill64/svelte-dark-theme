@@ -28,6 +28,7 @@
   "keywords": [
     "dark-mode",
     "ssr",
+    "svelte",
     "sveltekit"
   ],
   "scripts": {
@@ -42,11 +43,14 @@
     "lint": "npx eslint && npm run check"
   },
   "peerDependencies": {
-    "svelte": "4.2.2"
+    "svelte": "^4.0.0",
+    "@sveltejs/kit": "^1.0.0"
   },
   "devDependencies": {
     "@playwright/test": "1.39.0",
-    "@sveltejs/adapter-static": "2.0.3",
+    "@sveltejs/adapter-auto": "2.1.0",
+    "svelte": "4.2.2",
+    "@sveltejs/kit": "1.27.2",
     "@typescript-eslint/eslint-plugin": "6.9.1",
     "@typescript-eslint/parser": "6.9.1",
     "eslint-config-prettier": "9.0.0",
@@ -60,10 +64,8 @@
     "@jill64/attempt": "1.1.0",
     "@jill64/typed-storage": "1.0.1",
     "@jill64/svelte-device-theme": "1.1.1",
-    "@sveltejs/kit": "1.27.3",
     "@types/cookie": "0.5.3",
     "cookie": "0.5.0",
-    "svelte": "4.2.2",
     "typescanner": "0.5.3"
   }
 }
