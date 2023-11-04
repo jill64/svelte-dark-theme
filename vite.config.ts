@@ -5,5 +5,8 @@ export default defineConfig({
   plugins: [sveltekit()],
   test: {
     include: ['**/*.test.ts']
+  },
+  ssr: {
+    external: ['@jill64/sentry-sveltekit-cloudflare']
   }
 })
