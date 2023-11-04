@@ -9,7 +9,9 @@
   "bugs": "https://github.com/jill64/svelte-dark-theme/issues",
   "homepage": "https://github.com/jill64/svelte-dark-theme#readme",
   "files": [
-    "dist"
+    "dist",
+    "!*.test.*",
+    "!*.spec.*"
   ],
   "exports": {
     ".": {
@@ -26,10 +28,7 @@
     "url": "https://github.com/jill64/svelte-dark-theme.git"
   },
   "keywords": [
-    "dark-mode",
-    "ssr",
-    "svelte",
-    "sveltekit"
+    "svelte"
   ],
   "scripts": {
     "dev": "vite dev",
