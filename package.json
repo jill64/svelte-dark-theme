@@ -34,8 +34,8 @@
   ],
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && pnpm package",
-    "preview": "pnpm build && vite preview",
+    "build": "vite build && npm run package",
+    "preview": "npm run build && vite preview",
     "prepack": "npm run build",
     "test": "vitest",
     "test:e2e": "playwright test",
@@ -49,6 +49,7 @@
     "svelte": "^4.0.0"
   },
   "devDependencies": {
+    "@jill64/sentry-sveltekit-cloudflare": "^1.0.0",
     "@playwright/test": "1.39.0",
     "@sveltejs/adapter-cloudflare": "2.3.3",
     "@sveltejs/kit": "1.27.3",
