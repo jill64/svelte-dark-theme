@@ -4,15 +4,16 @@ import { server } from './store/server'
 import { setting } from './store/setting'
 import { isStoredConfig } from './util/isStoredConfig'
 import { isThemeValue } from './util/isThemeValue'
+import { transform } from './util/transform'
 
 export const onRender = (options?: {
   cookieKey?: string
+  /**
+   * @deprecated Not Required
+   */
   placeholder?: string
 }): Handle => {
-  const {
-    cookieKey = 'svelte-dark-theme',
-    placeholder = '%svelte-dark-theme%'
-  } = options ?? {}
+  const { cookieKey = 'svelte-dark-theme' } = options ?? {}
 
   return ({ event, resolve }) => {
     const { request, cookies } = event
@@ -42,7 +43,7 @@ export const onRender = (options?: {
     server.set(value)
 
     return resolve(event, {
-      transformPageChunk: ({ html }) => html.replace(placeholder, value)
+      transformPageChunk: ({ html }) => transform(html, value)
     })
   }
 }
