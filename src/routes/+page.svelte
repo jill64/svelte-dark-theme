@@ -12,7 +12,7 @@
 <div>Setting: {$setting}</div>
 <fieldset style:display="flex" style:gap="1rem" style:border="none">
   <Radio list={['dark', 'light', 'sync']} bind:value={$setting} let:item>
-    {item}
+    <span style:margin-left="0.5rem">{item}</span>
   </Radio>
 </fieldset>
 
