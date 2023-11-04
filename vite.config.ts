@@ -7,6 +7,6 @@ export default defineConfig({
     include: ['**/*.test.ts']
   },
   ssr: {
-    external: ['@jill64/sentry-sveltekit-cloudflare']
+    noExternal: ['@jill64/sentry-sveltekit-cloudflare']
   }
 })
