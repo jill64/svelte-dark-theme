@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test'
 test('dark-mode', async ({ page }) => {
   await page.emulateMedia({ colorScheme: 'dark' })
 
-  await page.goto('/svelte-dark-theme')
+  await page.goto('/')
   await expect(
     page.getByRole('heading', { name: 'svelte-dark-theme' })
   ).toBeVisible()
