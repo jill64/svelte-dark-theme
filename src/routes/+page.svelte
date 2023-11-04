@@ -1,26 +1,20 @@
 <script lang="ts">
   import { ThemeManager, setting, theme } from '$lib'
+  import { Radio } from '@jill64/svelte-input'
 </script>
 
 <ThemeManager />
 <header>
-  <h1>svelte-dark-theme</h1>
+  <h1>@jill64/svelte-dark-theme</h1>
   <a href="https://github.com/jill64/svelte-dark-theme">GitHub</a>
 </header>
 <div>Theme: {$theme}</div>
 <div>Setting: {$setting}</div>
-<label>
-  <input type="radio" bind:group={$setting} value="dark" />
-  Dark
-</label>
-<label>
-  <input type="radio" bind:group={$setting} value="light" />
-  Light
-</label>
-<label>
-  <input type="radio" bind:group={$setting} value="sync" />
-  Sync
-</label>
+<fieldset style:display="flex" style:gap="1rem" style:border="none">
+  <Radio list={['dark', 'light', 'sync']} bind:value={$setting} let:item>
+    {item}
+  </Radio>
+</fieldset>
 
 <style>
   :global(body) {
