@@ -30,7 +30,8 @@
   "keywords": [
     "dark-mode",
     "ssr",
-    "svelte"
+    "svelte",
+    "theme"
   ],
   "scripts": {
     "dev": "vite dev",
