@@ -54,7 +54,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "1.0.0",
     "@playwright/test": "1.39.0",
     "@sveltejs/adapter-cloudflare": "2.3.3",
-    "@sveltejs/kit": "1.27.3",
+    "@sveltejs/kit": "1.27.4",
     "@types/cookie": "0.5.4",
     "@typescript-eslint/eslint-plugin": "6.10.0",
     "@typescript-eslint/parser": "6.10.0",
