@@ -8,41 +8,85 @@ test('dark-mode', async ({ page }) => {
     page.getByRole('heading', { name: 'svelte-dark-theme' })
   ).toBeVisible()
 
-  await expect(page.getByText('Theme: light')).not.toBeVisible()
-  await expect(page.getByText('Theme: dark')).toBeVisible()
-  await expect(page.getByText('Setting: light')).not.toBeVisible()
-  await expect(page.getByText('Setting: dark')).not.toBeVisible()
-  await expect(page.getByText('Setting: sync')).toBeVisible()
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).not.toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).toContainText("'dark'")
+
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'dark'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).toContainText("'sync'")
 
   expect(await page.locator('body').getAttribute('class')).toContain('dark')
 
   await page.getByLabel('Light').click()
 
-  await expect(page.getByText('Theme: light')).toBeVisible()
-  await expect(page.getByText('Theme: dark')).not.toBeVisible()
-  await expect(page.getByText('Setting: light')).toBeVisible()
-  await expect(page.getByText('Setting: dark')).not.toBeVisible()
-  await expect(page.getByText('Setting: sync')).not.toBeVisible()
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).not.toContainText("'dark'")
+
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'dark'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'sync'")
 
   expect(await page.locator('body').getAttribute('class')).toContain('light')
 
   await page.getByLabel('Dark').click()
 
-  await expect(page.getByText('Theme: light')).not.toBeVisible()
-  await expect(page.getByText('Theme: Dark')).toBeVisible()
-  await expect(page.getByText('Setting: light')).not.toBeVisible()
-  await expect(page.getByText('Setting: dark')).toBeVisible()
-  await expect(page.getByText('Setting: sync')).not.toBeVisible()
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).not.toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).toContainText("'dark'")
+
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).toContainText("'dark'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'sync'")
 
   expect(await page.locator('body').getAttribute('class')).toContain('dark')
 
   await page.getByLabel('Sync').click()
 
-  await expect(page.getByText('Theme: light')).not.toBeVisible()
-  await expect(page.getByText('Theme: Dark')).toBeVisible()
-  await expect(page.getByText('Setting: light')).not.toBeVisible()
-  await expect(page.getByText('Setting: dark')).not.toBeVisible()
-  await expect(page.getByText('Setting: sync')).toBeVisible()
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).not.toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).toContainText("'dark'")
+
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'dark'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).toContainText("'sync'")
 
   expect(await page.locator('body').getAttribute('class')).toContain('dark')
 })
