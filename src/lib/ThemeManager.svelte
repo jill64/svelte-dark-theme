@@ -1,6 +1,7 @@
 <script lang="ts">
   import { browser } from '$app/environment'
   import { isDark } from '@jill64/svelte-device-theme'
+  import { SvelteHTML } from '@jill64/svelte-html'
   import * as cookie from 'cookie'
   import { setting } from './store/setting'
   import { theme } from './store/theme'
@@ -21,9 +22,6 @@
       }
     )
   }
-
-  $: if (browser) {
-    document.body.classList.toggle('dark', $theme === 'dark')
-    document.body.classList.toggle('light', $theme === 'light')
-  }
 </script>
+
+<SvelteHTML class={$theme} />

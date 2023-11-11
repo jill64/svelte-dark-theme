@@ -25,7 +25,7 @@ test('light-mode', async ({ page }) => {
     page.getByRole('code').filter({ hasText: '$setting' })
   ).toContainText("'sync'")
 
-  expect(await page.locator('body').getAttribute('class')).toContain('light')
+  expect(await page.locator('html').getAttribute('class')).toContain('light')
 
   await page.getByLabel('Dark').click()
 
@@ -46,7 +46,7 @@ test('light-mode', async ({ page }) => {
     page.getByRole('code').filter({ hasText: '$setting' })
   ).not.toContainText("'sync'")
 
-  expect(await page.locator('body').getAttribute('class')).toContain('dark')
+  expect(await page.locator('html').getAttribute('class')).toContain('dark')
 
   await page.reload()
 
@@ -67,7 +67,7 @@ test('light-mode', async ({ page }) => {
     page.getByRole('code').filter({ hasText: '$setting' })
   ).not.toContainText("'sync'")
 
-  expect(await page.locator('body').getAttribute('class')).toContain('dark')
+  expect(await page.locator('html').getAttribute('class')).toContain('dark')
 
   await page.getByLabel('Light').click()
 
@@ -88,7 +88,7 @@ test('light-mode', async ({ page }) => {
     page.getByRole('code').filter({ hasText: '$setting' })
   ).not.toContainText("'sync'")
 
-  expect(await page.locator('body').getAttribute('class')).toContain('light')
+  expect(await page.locator('html').getAttribute('class')).toContain('light')
 
   await page.reload()
 
@@ -109,7 +109,7 @@ test('light-mode', async ({ page }) => {
     page.getByRole('code').filter({ hasText: '$setting' })
   ).not.toContainText("'sync'")
 
-  expect(await page.locator('body').getAttribute('class')).toContain('light')
+  expect(await page.locator('html').getAttribute('class')).toContain('light')
 
   await page.getByLabel('Sync').click()
 
@@ -130,5 +130,5 @@ test('light-mode', async ({ page }) => {
     page.getByRole('code').filter({ hasText: '$setting' })
   ).toContainText("'sync'")
 
-  expect(await page.locator('body').getAttribute('class')).toContain('light')
+  expect(await page.locator('html').getAttribute('class')).toContain('light')
 })
