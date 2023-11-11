@@ -6,9 +6,7 @@ import { setting } from './store/setting'
 import { isStoredConfig } from './util/isStoredConfig'
 import { isThemeValue } from './util/isThemeValue'
 
-export const onRender = (options?: {
-  cookieKey?: string
-}): Handle => {
+export const onRender = (options?: { cookieKey?: string }): Handle => {
   const { cookieKey = 'svelte-dark-theme' } = options ?? {}
 
   return ({ event, resolve }) => {
