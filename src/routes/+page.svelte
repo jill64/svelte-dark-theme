@@ -93,7 +93,7 @@
     transition: all 0.3s ease-in-out;
     font-family: sans-serif;
   }
-  :global(body.dark) {
+  :global(.dark body) {
     background-color: #1b1b1b;
     color: #eee;
   }
