@@ -51,11 +51,9 @@
     style:--cell-width="{cell_h}px"
     style:--cell-height="{cell_h}px"
   >
-    <div class="cell">
-      <code>Device</code>
-      <!-- <code>@media (prefers-color-scheme: dark)</code> -->
-      <code>'{$isDark ? 'dark' : 'light'}'</code>
-    </div>
+    <code>
+      Device<br />'{$isDark ? 'dark' : 'light'}'
+    </code>
     <svg
       width={cell_w}
       height={cell_h}
@@ -64,10 +62,9 @@
     >
       <path d="M {cell_w / 2} {cell_h} V {$mv_h}" fill="transparent" />
     </svg>
-    <div class="cell">
-      <code>$setting</code>
-      <code>'{$setting}'</code>
-    </div>
+    <code>
+      $setting<br />'{$setting}'
+    </code>
 
     <svg
       width={cell_w}
@@ -84,10 +81,9 @@
     </svg>
 
     <div />
-    <div class="cell">
-      <code>$theme</code>
-      <code>'{$theme}'</code>
-    </div>
+    <code>
+      $theme<br />'{$theme}'
+    </code>
     <div />
   </div>
 </main>
@@ -149,13 +145,10 @@
     margin-left: 0.5rem;
   }
   code {
-    display: block;
-    text-align: center;
-    font-size: large;
-  }
-  .grid div.cell {
     border: 1px solid;
     display: flex;
+    text-align: center;
+    font-size: large;
     flex-direction: column;
     justify-content: center;
     align-items: center;
