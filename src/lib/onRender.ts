@@ -1,10 +1,10 @@
 import { attempt } from '@jill64/attempt'
+import { apply } from '@jill64/svelte-html'
 import type { Handle } from '@sveltejs/kit'
 import { server } from './store/server'
 import { setting } from './store/setting'
 import { isStoredConfig } from './util/isStoredConfig'
 import { isThemeValue } from './util/isThemeValue'
-import { transform } from './util/transform'
 
 export const onRender = (options?: {
   cookieKey?: string
@@ -43,7 +43,9 @@ export const onRender = (options?: {
     server.set(value)
 
     return resolve(event, {
-      transformPageChunk: ({ html }) => transform(html, value)
+      transformPageChunk: apply({
+        class: value
+      })
     })
   }
 }
