@@ -28,9 +28,11 @@
     "url": "https://github.com/jill64/svelte-dark-theme.git"
   },
   "keywords": [
+    "dark",
     "dark-mode",
     "ssr",
     "svelte",
+    "sveltekit",
     "theme"
   ],
   "scripts": {
