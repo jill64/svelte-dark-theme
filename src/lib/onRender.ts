@@ -8,10 +8,6 @@ import { isThemeValue } from './util/isThemeValue'
 
 export const onRender = (options?: {
   cookieKey?: string
-  /**
-   * @deprecated Not Required
-   */
-  placeholder?: string
 }): Handle => {
   const { cookieKey = 'svelte-dark-theme' } = options ?? {}
 
