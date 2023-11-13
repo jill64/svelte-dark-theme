@@ -12,7 +12,7 @@ export const theme = derived(
       ? isThemeValue($setting)
         ? $setting
         : $isDark
-        ? 'dark'
-        : 'light'
+          ? 'dark'
+          : 'light'
       : $server
 )
