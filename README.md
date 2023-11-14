@@ -52,6 +52,30 @@ npm i @jill64/svelte-dark-theme
 </style>
 ```
 
+## flip
+
+This function provides the smart theme switching found on some sites.
+Each call to the function switches the `setting` according to the following rules
+
+| before setting | device theme | after setting | after theme |
+| -------------- | ------------ | ------------- | ----------- |
+| `light`        | `light`      | `dark`        | `dark`      |
+| `light`        | `dark`       | `sync`        | `dark`      |
+| `dark`         | `light`      | `sync`        | `light`     |
+| `dark`         | `dark`       | `light`       | `light`     |
+| `sync`         | `light`      | `dark`        | `dark`      |
+| `sync`         | `dark`       | `light`       | `light`     |
+
+```svelte
+<script>
+  import { flip } from '@jill64/svelte-dark-theme'
+</script>
+
+<button on:click={$filp}>
+  flip theme
+</button>
+```
+
 ## SSR (Optional)
 
 When using SSR, you can reduce flushing on load by binding classes to html with hooks.
