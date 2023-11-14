@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ThemeManager, setting, theme } from '$lib'
+  import { ThemeManager, flip, setting, theme } from '$lib'
   import { isDark } from '@jill64/svelte-device-theme'
   import { Radio } from '@jill64/svelte-input'
   import { spring } from 'svelte/motion'
@@ -28,25 +28,41 @@
 <ThemeManager />
 
 <header>
-  <div>
+  <hgroup>
     <h1>@jill64/svelte-dark-theme</h1>
     <p>☯ Dark theme manager for Svelte</p>
-  </div>
+  </hgroup>
   <a href="https://github.com/jill64/svelte-dark-theme">
     <GitHubLogo />
   </a>
 </header>
 
 <main>
-  <fieldset>
-    <Radio list={['dark', 'light', 'sync']} bind:value={$setting} let:item>
-      <span class="item">
-        <span>{icon[item]}</span>
-        <span>{item[0].toUpperCase()}{item.slice(1)}</span>
-      </span>
-    </Radio>
-  </fieldset>
-  <div
+  <aside
+    style:display="flex"
+    style:flex-wrap="wrap"
+    style:align-items="center"
+    style:justify-content="center"
+    style:gap="1rem"
+  >
+    <fieldset>
+      <Radio list={['dark', 'light', 'sync']} bind:value={$setting} let:item>
+        <span class="item">
+          <span>{icon[item]}</span>
+          <span>{item[0].toUpperCase()}{item.slice(1)}</span>
+        </span>
+      </Radio>
+    </fieldset>
+    <button on:click={$flip}>
+      {#if $theme === 'dark'}
+        {icon.dark}
+      {:else}
+        {icon.light}
+      {/if}
+      flip
+    </button>
+  </aside>
+  <output
     class="grid"
     style:--cell-width="{cell_h}px"
     style:--cell-height="{cell_h}px"
@@ -85,7 +101,7 @@
       $theme<br />'{$theme}'
     </code>
     <div />
-  </div>
+  </output>
 </main>
 
 <style>
@@ -155,5 +171,15 @@
     border-radius: 0.5rem;
     width: var(--cell-width);
     height: var(--cell-height);
+  }
+
+  button {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: inherit;
+    background-color: inherit;
+    border: 1px solid;
+    cursor: pointer;
+    font-size: x-large;
   }
 </style>
