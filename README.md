@@ -71,9 +71,7 @@ Each call to the function switches the `setting` according to the following rule
   import { flip } from '@jill64/svelte-dark-theme'
 </script>
 
-<button on:click={$filp}>
-  flip theme
-</button>
+<button on:click={$filp}> flip theme </button>
 ```
 
 ## SSR (Optional)
