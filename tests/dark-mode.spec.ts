@@ -89,4 +89,46 @@ test('dark-mode', async ({ page }) => {
   ).toContainText("'sync'")
 
   expect(await page.locator('html').getAttribute('class')).toContain('dark')
+
+  await page.getByText('flip').click()
+
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).not.toContainText("'dark'")
+
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'dark'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'sync'")
+
+  expect(await page.locator('html').getAttribute('class')).toContain('light')
+
+  await page.getByText('flip').click()
+
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).not.toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$theme' })
+  ).toContainText("'dark'")
+
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'light'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).not.toContainText("'dark'")
+  await expect(
+    page.getByRole('code').filter({ hasText: '$setting' })
+  ).toContainText("'sync'")
+
+  expect(await page.locator('html').getAttribute('class')).toContain('dark')
 })
