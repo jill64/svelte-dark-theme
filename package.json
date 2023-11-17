@@ -1,7 +1,7 @@
 {
   "name": "@jill64/svelte-dark-theme",
   "version": "2.1.0",
-  "description": "☯ Dark theme manager for Svelte",
+  "description": "☯ Dark Theme Manager for SvelteKit",
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
