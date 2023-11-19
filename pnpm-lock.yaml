@@ -21,7 +21,7 @@ dependencies:
     specifier: 0.6.0
     version: 0.6.0
   svelte-feather-icons:
-    specifier: ^4.0.1
+    specifier: 4.0.1
     version: 4.0.1
   typescanner:
     specifier: 0.5.3
