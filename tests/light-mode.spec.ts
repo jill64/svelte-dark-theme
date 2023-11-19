@@ -132,7 +132,7 @@ test('light-mode', async ({ page }) => {
 
   expect(await page.locator('html').getAttribute('class')).toContain('light')
 
-  await page.getByText('flip').click()
+  await page.getByRole('button').click()
 
   await expect(
     page.getByRole('code').filter({ hasText: '$theme' })
@@ -153,7 +153,7 @@ test('light-mode', async ({ page }) => {
 
   expect(await page.locator('html').getAttribute('class')).toContain('dark')
 
-  await page.getByText('flip').click()
+  await page.getByRole('button').click()
 
   await expect(
     page.getByRole('code').filter({ hasText: '$theme' })
