@@ -1,8 +1,9 @@
 <script lang="ts">
-  import { ThemeManager, flip, setting, theme } from '$lib'
+  import { ThemeManager, setting, theme } from '$lib'
   import { isDark } from '@jill64/svelte-device-theme'
   import { Radio } from '@jill64/svelte-input'
   import { spring } from 'svelte/motion'
+  import FlipButton from '../lib/FlipButton.svelte'
   import GitHubLogo from './GitHubLogo.svelte'
 
   const icon = {
@@ -53,14 +54,7 @@
         </span>
       </Radio>
     </fieldset>
-    <button on:click={$flip}>
-      {#if $theme === 'dark'}
-        {icon.dark}
-      {:else}
-        {icon.light}
-      {/if}
-      flip
-    </button>
+    <FlipButton />
   </aside>
   <output
     class="grid"
@@ -171,15 +165,5 @@
     border-radius: 0.5rem;
     width: var(--cell-width);
     height: var(--cell-height);
-  }
-
-  button {
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: inherit;
-    background-color: inherit;
-    border: 1px solid;
-    cursor: pointer;
-    font-size: x-large;
   }
 </style>
