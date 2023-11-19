@@ -6,6 +6,8 @@
 
 ☯ Dark Theme Manager for SvelteKit
 
+## [Demo](https://svelte-dark-theme.jill64.dev)
+
 ## Installation
 
 ```sh
