@@ -2,15 +2,10 @@
   import { ThemeManager, setting, theme } from '$lib'
   import { isDark } from '@jill64/svelte-device-theme'
   import { Radio } from '@jill64/svelte-input'
+  import { MoonIcon, SunIcon } from 'svelte-feather-icons'
   import { spring } from 'svelte/motion'
   import FlipButton from '../lib/FlipButton.svelte'
   import GitHubLogo from './GitHubLogo.svelte'
-
-  const icon = {
-    dark: '☾',
-    light: '☀︎',
-    sync: '☯'
-  }
 
   const cell_h = 100
   const cell_w = 100
@@ -49,8 +44,13 @@
     <fieldset>
       <Radio list={['dark', 'light', 'sync']} bind:value={$setting} let:item>
         <span class="item">
-          <span>{icon[item]}</span>
-          <span>{item[0].toUpperCase()}{item.slice(1)}</span>
+          {#if item === 'dark'}
+            <MoonIcon /> Dark
+          {:else if item === 'light'}
+            <SunIcon /> Light
+          {:else}
+            ☯ Sync
+          {/if}
         </span>
       </Radio>
     </fieldset>

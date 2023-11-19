@@ -8,12 +8,20 @@
   export let iconSize = 24
   export let strokeWidth = 2
   export let iconClass = ''
+  export let title = (dark: boolean) =>
+    `Change to ${dark ? 'Dark' : 'Light'} Theme`
 
   $: size = iconSize.toString()
   $: dark = $theme === 'dark'
 </script>
 
-<button on:click={$flip} on:click {style} class="{Class} {dark ? 'dark' : ''}">
+<button
+  on:click={$flip}
+  title={title(dark)}
+  on:click
+  {style}
+  class="{Class} {dark ? 'dark' : ''}"
+>
   {#if dark}
     <SunIcon {size} {strokeWidth} class={iconClass} />
   {:else}
