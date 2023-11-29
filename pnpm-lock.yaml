@@ -9,8 +9,8 @@ dependencies:
     specifier: 1.1.0
     version: 1.1.0
   '@jill64/svelte-device-theme':
-    specifier: 1.2.1
-    version: 1.2.1(svelte@4.2.7)
+    specifier: 1.2.2
+    version: 1.2.2(svelte@4.2.7)
   '@jill64/svelte-html':
     specifier: 1.0.0
     version: 1.0.0(@sveltejs/kit@1.27.6)(svelte@4.2.7)
@@ -544,13 +544,13 @@ packages:
       toucan-js: 3.3.1
     dev: true
 
-  /@jill64/svelte-device-theme@1.2.1(svelte@4.2.7):
-    resolution: {integrity: sha512-1KCfKxXHoNNVPxoaeo8tqCGOH+3X+4OS+lSFEZP6NCiREbrL1cHB2P9mIUN8Xr6HIE1CYlAZIUQBUpb47hadKw==}
+  /@jill64/svelte-device-theme@1.2.2(svelte@4.2.7):
+    resolution: {integrity: sha512-M4woCkhP0lmzPZQq71WEIoc2qvep+RLFI5X/iquZCLTXwwiqlrapmeOQQ2Ic/iHrEAmrH/VF0+b88Ib7QqdHtA==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
       svelte: 4.2.7
-      svelte-mq-store: 0.0.1(svelte@4.2.7)
+      svelte-mq-store: 1.0.0(svelte@4.2.7)
     dev: false
 
   /@jill64/svelte-html@1.0.0(@sveltejs/kit@1.27.6)(svelte@4.2.7):
@@ -2098,8 +2098,8 @@ packages:
     resolution: {integrity: sha512-vKaW71QMCBcTNijAGc0mUl8k3DQ66iYmp6MB8BMGCXyWk82bTrcLy8FOnSm9fE+8q6TwzD6PLUoYFHt0II93Xw==}
     dev: true
 
-  /svelte-mq-store@0.0.1(svelte@4.2.7):
-    resolution: {integrity: sha512-HHO2tfnbohrkz1Ua46sa076CZeafldE5JWJMz550f+vrc1VGk0X/ud7HmPmi93SHig7z3NiKBOom7F1c8Aqeeg==}
+  /svelte-mq-store@1.0.0(svelte@4.2.7):
+    resolution: {integrity: sha512-3n/86onQtqd231vW066341pDTnBXPqDEPcc0JGTmKtHqmA6ipa6iIu4siGXpsDrI26u3A9YazuRSiGsKKErabQ==}
     peerDependencies:
       svelte: ^4.0.0
     dependencies:
