@@ -71,7 +71,7 @@
     "@jill64/attempt": "1.1.0",
     "@jill64/svelte-device-theme": "1.2.1",
     "@jill64/svelte-html": "1.0.0",
-    "@jill64/typed-storage": "1.0.1",
+    "@jill64/typed-storage": "2.0.1",
     "cookie": "0.6.0",
     "svelte-feather-icons": "4.0.1",
     "typescanner": "0.5.3"
