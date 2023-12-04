@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-dark-theme",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "☯ Dark Theme Manager for SvelteKit",
   "type": "module",
   "main": "dist/index.js",
@@ -43,7 +43,7 @@
     "test": "playwright test",
     "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
     "check": "svelte-kit sync && npx svelte-check",
-    "format": "npx prettier -w . --plugin prettier-plugin-svelte .",
+    "format": "npx @jill64/psx",
     "lint": "npx eslint && npm run check"
   },
   "peerDependencies": {
@@ -60,8 +60,6 @@
     "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "2.3.3",
     "@sveltejs/kit": "1.27.6",
-    "@types/cookie": "0.6.0",
-    "prettier-plugin-svelte": "3.1.2",
     "svelte": "4.2.8",
     "typescript": "5.3.2",
     "vite": "5.0.5"
@@ -69,9 +67,9 @@
   "dependencies": {
     "@jill64/attempt": "1.1.0",
     "@jill64/svelte-device-theme": "1.2.2",
+    "svelte-baked-cookie": "0.0.1",
     "@jill64/svelte-html": "1.0.0",
     "@jill64/svelte-storage": "0.0.4",
-    "cookie": "0.6.0",
     "svelte-feather-icons": "4.0.1",
     "typescanner": "0.5.3"
   }

@@ -1,9 +1,8 @@
-import { attempt } from '@jill64/attempt'
 import { apply } from '@jill64/svelte-html'
 import type { Handle } from '@sveltejs/kit'
+import { bakery } from './bakery'
 import { server } from './store/server'
 import { setting } from './store/setting'
-import { isStoredConfig } from './util/isStoredConfig'
 import { isThemeValue } from './util/isThemeValue'
 
 export const onRender = (options?: { cookieKey?: string }): Handle => {
@@ -18,17 +17,8 @@ export const onRender = (options?: { cookieKey?: string }): Handle => {
       return resolve(event)
     }
 
-    const str = cookies.get(cookieKey)
-
-    if (!str) {
-      return resolve(event)
-    }
-
-    const obj = attempt(() => JSON.parse(str))
-
-    if (!isStoredConfig(obj)) {
-      return resolve(event)
-    }
+    const { bakedCookies } = bakery(cookieKey).bake(cookies)
+    const obj = bakedCookies[cookieKey].get()
 
     setting.set(obj.setting)
 
