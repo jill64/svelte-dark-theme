@@ -43,7 +43,7 @@
     "test": "playwright test",
     "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
     "check": "svelte-kit sync && npx svelte-check",
-    "format": "npx prettier -w . --plugin prettier-plugin-svelte .",
+    "format": "npx @jill64/psx",
     "lint": "npx eslint && npm run check"
   },
   "peerDependencies": {
