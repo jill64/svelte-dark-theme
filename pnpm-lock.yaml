@@ -15,8 +15,8 @@ dependencies:
     specifier: 1.0.0
     version: 1.0.0(@sveltejs/kit@1.27.6)(svelte@4.2.8)
   '@jill64/svelte-storage':
-    specifier: 0.0.2
-    version: 0.0.2(@sveltejs/kit@1.27.6)(svelte@4.2.8)
+    specifier: 0.0.3
+    version: 0.0.3(@sveltejs/kit@1.27.6)(svelte@4.2.8)
   cookie:
     specifier: 0.6.0
     version: 0.6.0
@@ -633,19 +633,19 @@ packages:
       svelte-loading-spinners: 0.3.4
     dev: true
 
-  /@jill64/svelte-storage@0.0.2(@sveltejs/kit@1.27.6)(svelte@4.2.8):
-    resolution: {integrity: sha512-eexyP3K/2fuP7vpv0oU8C/fZH9HjDnvRBgoBl8dgzH/V9Ch3wPTLIj8y9CbPuLSPf3c9UmHWMAl5D7aotbAQ/A==}
+  /@jill64/svelte-storage@0.0.3(@sveltejs/kit@1.27.6)(svelte@4.2.8):
+    resolution: {integrity: sha512-nt/kuWb8aHIwL62F/5waYp5GTc8XvEPb/7Fqg0ylQmGvlF8ftGi6iTTzymhL3qYhxlZZR16tgNJvpSJvYSQCPA==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^4.0.0
     dependencies:
-      '@jill64/typed-storage': 2.0.2
+      '@jill64/typed-storage': 2.0.3
       '@sveltejs/kit': 1.27.6(svelte@4.2.8)(vite@5.0.5)
       svelte: 4.2.8
     dev: false
 
-  /@jill64/typed-storage@2.0.2:
-    resolution: {integrity: sha512-z+Q/XrPrqF2vZ1QyW+U3B5ZnsxjI6oEgAswWkK+khIQXT7wDyoCzRzpFyuiRQ5hGiGF6y1EtU3sduIayz9DzqQ==}
+  /@jill64/typed-storage@2.0.3:
+    resolution: {integrity: sha512-5Ecpi/WmfCqJjMGnop71XYr8+bzmGR+i+BC50K03qsaaIOKU51fZWVw5xCZYoeroolT7heXCOTmHWwz3UosG+w==}
     dependencies:
       ts-serde: 0.3.1
     dev: false
