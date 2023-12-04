@@ -4,6 +4,7 @@
     "allowJs": true,
     "checkJs": true,
     "strict": true,
+    "lib": ["ESNext"],
     "moduleResolution": "Bundler"
   }
 }
