@@ -8,12 +8,6 @@
 
 ## [Demo](https://svelte-dark-theme.jill64.dev)
 
-## Installation
-
-```sh
-npm i @jill64/svelte-dark-theme
-```
-
 <!----- END GHOST DOCS HEADER ----->
 
 ## Example
