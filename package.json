@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-dark-theme",
-  "version": "2.2.11",
+  "version": "2.2.12",
   "description": "☯ Dark Theme Manager for SvelteKit",
   "type": "module",
   "main": "dist/index.js",
@@ -66,7 +66,7 @@
   },
   "dependencies": {
     "@jill64/attempt": "1.1.0",
-    "@jill64/svelte-device-theme": "1.2.3",
+    "@jill64/svelte-device-theme": "1.2.4",
     "svelte-baked-cookie": "0.0.3",
     "@jill64/svelte-html": "1.0.0",
     "@jill64/svelte-storage": "0.0.5",
