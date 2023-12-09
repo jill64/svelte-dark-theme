@@ -15,8 +15,8 @@ dependencies:
     specifier: 1.0.0
     version: 1.0.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   '@jill64/svelte-storage':
-    specifier: 0.0.5
-    version: 0.0.5(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+    specifier: 1.0.0
+    version: 1.0.0(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   svelte-baked-cookie:
     specifier: 0.0.4
     version: 0.0.4(@sveltejs/kit@1.27.7)(svelte@4.2.8)
@@ -629,8 +629,8 @@ packages:
       svelte-loading-spinners: 0.3.4
     dev: true
 
-  /@jill64/svelte-storage@0.0.5(@sveltejs/kit@1.27.7)(svelte@4.2.8):
-    resolution: {integrity: sha512-ItcIjz3ArodxszhfOWQyeRr26ZFtkddhlxGYzufLNPfocs+O5CbfyNeRMJh02AEHyId10fqBC+lGFzQ2Hwpkhw==}
+  /@jill64/svelte-storage@1.0.0(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-44AQZATKcrKuS4W/7InaARM8t1ssljLZzCAZwWLYmqWQtruELz7YqrhnLIxPpBopPHEFi/2y42xjc6BgXHoYjg==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^4.0.0
