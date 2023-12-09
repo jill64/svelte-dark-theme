@@ -18,8 +18,8 @@ dependencies:
     specifier: 0.0.5
     version: 0.0.5(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   svelte-baked-cookie:
-    specifier: 0.0.3
-    version: 0.0.3(@sveltejs/kit@1.27.7)(svelte@4.2.8)
+    specifier: 0.0.4
+    version: 0.0.4(@sveltejs/kit@1.27.7)(svelte@4.2.8)
   svelte-feather-icons:
     specifier: 4.0.1
     version: 4.0.1
@@ -640,8 +640,8 @@ packages:
       svelte: 4.2.8
     dev: false
 
-  /@jill64/transform@0.0.2:
-    resolution: {integrity: sha512-WA/hYk3f96XF2aLICBqtwiX+VFa/hFFnATO8xP6NT+ZohFHZfXV7I+gdE4+US0uyXDE8ykrS1KC34qith6eg7Q==}
+  /@jill64/transform@1.0.0:
+    resolution: {integrity: sha512-pwyMLSxedzcOnSqd9ylutdsV8/9hejjwbox65uJQBDVOy7m+QS4OUYi1+VXsxG3do1l58E2WrXgzB3d7sxUMKQ==}
     dev: false
 
   /@jill64/typed-storage@2.0.5:
@@ -2691,13 +2691,13 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-baked-cookie@0.0.3(@sveltejs/kit@1.27.7)(svelte@4.2.8):
-    resolution: {integrity: sha512-wLbR+05yBPzAvv0UBEmuL6sKJBktyKPEBbJK/oroyQAghKlLvtl7hL8hT97RvE9R8igsjaVBUpwp7gFFtIBytw==}
+  /svelte-baked-cookie@0.0.4(@sveltejs/kit@1.27.7)(svelte@4.2.8):
+    resolution: {integrity: sha512-8aAccd+/6qTekmedvcWo7gHzBrsqCW/Z1ZPNIGgI9K4CCa9Vdfq3+h7qe0tbaFYOvRhgacgefW7Mh8RBLk9Pcw==}
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
       svelte: ^4.0.0
     dependencies:
-      '@jill64/transform': 0.0.2
+      '@jill64/transform': 1.0.0
       '@sveltejs/kit': 1.27.7(svelte@4.2.8)(vite@5.0.7)
       '@types/cookie': 0.6.0
       cookie: 0.6.0
