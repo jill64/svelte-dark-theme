@@ -1,11 +1,9 @@
 <script lang="ts">
-  import { ThemeManager, setting, theme } from '$lib'
+  import { theme, setting } from '@jill64/npm-demo-layout'
   import { isDark } from '@jill64/svelte-device-theme'
   import { Radio } from '@jill64/svelte-input'
   import { MoonIcon, SunIcon } from 'svelte-feather-icons'
   import { spring } from 'svelte/motion'
-  import FlipButton from '../lib/FlipButton.svelte'
-  import GitHubLogo from './GitHubLogo.svelte'
 
   const cell_h = 100
   const cell_w = 100
@@ -20,18 +18,6 @@
   $: $mc_start_y = isSync ? cell_h / 2 : cell_h * 3 - cell_h / 2
   $: $mc_start_y2 = isSync ? cell_h / 2 : cell_h * 3 - cell_h / 2
 </script>
-
-<ThemeManager />
-
-<header>
-  <hgroup>
-    <h1>@jill64/svelte-dark-theme</h1>
-    <p>☯ Dark theme manager for Svelte</p>
-  </hgroup>
-  <a href="https://github.com/jill64/svelte-dark-theme">
-    <GitHubLogo />
-  </a>
-</header>
 
 <main>
   <aside
@@ -54,7 +40,6 @@
         </span>
       </Radio>
     </fieldset>
-    <FlipButton />
   </aside>
   <output
     class="grid"
@@ -101,20 +86,12 @@
 <style>
   :global(body) {
     transition: all 0.3s ease-in-out;
-    font-family: sans-serif;
-  }
-  :global(.dark body) {
-    background-color: #1b1b1b;
-    color: #eee;
   }
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  }
-  p {
-    font-size: large;
   }
   :global(.grid) {
     display: inline-grid;
@@ -140,12 +117,6 @@
     fieldset {
       grid-template-columns: auto;
     }
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0.5rem;
   }
   .item {
     display: flex;
