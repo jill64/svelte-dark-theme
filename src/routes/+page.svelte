@@ -1,12 +1,14 @@
 <script lang="ts">
   import { setting, theme } from '@jill64/npm-demo-layout'
-  import { HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
+  import { Highlight, HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
+  import { javascript as js } from '@jill64/npm-demo-layout/highlight/languages'
   import { isDark } from '@jill64/svelte-device-theme'
   import { Radio } from '@jill64/svelte-input'
   import { MoonIcon, SunIcon } from 'svelte-feather-icons'
   import { spring } from 'svelte/motion'
   import { code } from './code'
   import { rootCode } from './rootCode'
+  import { ssrCode } from './ssrCode'
 
   const cell_h = 100
   const cell_w = 100
@@ -93,6 +95,7 @@
           setting: $setting
         }).trim()}
       />
+      <Highlight code={ssrCode} language={js} />
     </div>
   </output>
 </main>
