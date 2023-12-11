@@ -1,9 +1,12 @@
 <script lang="ts">
-  import { theme, setting } from '@jill64/npm-demo-layout'
+  import { setting, theme } from '@jill64/npm-demo-layout'
+  import { HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
   import { isDark } from '@jill64/svelte-device-theme'
   import { Radio } from '@jill64/svelte-input'
   import { MoonIcon, SunIcon } from 'svelte-feather-icons'
   import { spring } from 'svelte/motion'
+  import { code } from './code'
+  import { rootCode } from './rootCode'
 
   const cell_h = 100
   const cell_w = 100
@@ -41,49 +44,71 @@
       </Radio>
     </fieldset>
   </aside>
-  <output
-    class="grid"
-    style:--cell-width="{cell_h}px"
-    style:--cell-height="{cell_h}px"
-  >
-    <code>
-      Device<br />'{$isDark ? 'dark' : 'light'}'
-    </code>
-    <svg
-      width={cell_w}
-      height={cell_h}
-      viewBox="0 0 {cell_w} {cell_h}"
-      xmlns="http://www.w3.org/2000/svg"
+  <output>
+    <div
+      class="grid"
+      style:--cell-width="{cell_h}px"
+      style:--cell-height="{cell_h}px"
     >
-      <path d="M {cell_w / 2} {cell_h} V {$mv_h}" fill="transparent" />
-    </svg>
-    <code>
-      $setting<br />'{$setting}'
-    </code>
+      <code>
+        Device<br />'{$isDark ? 'dark' : 'light'}'
+      </code>
+      <svg
+        width={cell_w}
+        height={cell_h}
+        viewBox="0 0 {cell_w} {cell_h}"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M {cell_w / 2} {cell_h} V {$mv_h}" fill="transparent" />
+      </svg>
+      <code>
+        $setting<br />'{$setting}'
+      </code>
 
-    <svg
-      width={cell_w}
-      height={cell_h * 3}
-      viewBox="0 0 {cell_w} {cell_h * 3}"
-      xmlns="http://www.w3.org/2000/svg"
-      style:grid-row="1 / span 3"
-    >
-      <path
-        d="M 0 {$mc_start_y} C {cell_w} {$mc_start_y2}, 0 {cell_h *
-          1.5}, {cell_w} {cell_h * 1.5}"
-        fill="transparent"
+      <svg
+        width={cell_w}
+        height={cell_h * 3}
+        viewBox="0 0 {cell_w} {cell_h * 3}"
+        xmlns="http://www.w3.org/2000/svg"
+        style:grid-row="1 / span 3"
+      >
+        <path
+          d="M 0 {$mc_start_y} C {cell_w} {$mc_start_y2}, 0 {cell_h *
+            1.5}, {cell_w} {cell_h * 1.5}"
+          fill="transparent"
+        />
+      </svg>
+
+      <div />
+      <code>
+        $theme<br />'{$theme}'
+      </code>
+      <div />
+    </div>
+    <div style:overflow-x="auto" style:font-size="large">
+      <HighlightSvelte code={rootCode.trim()} />
+      <HighlightSvelte
+        code={code({
+          theme: $theme,
+          setting: $setting
+        }).trim()}
       />
-    </svg>
-
-    <div />
-    <code>
-      $theme<br />'{$theme}'
-    </code>
-    <div />
+    </div>
   </output>
 </main>
 
 <style>
+  output {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+  }
+  @media (max-width: 800px) {
+    output {
+      grid-template-columns: auto;
+    }
+  }
   :global(body) {
     transition: all 0.3s ease-in-out;
   }
@@ -93,7 +118,7 @@
     align-items: center;
     gap: 1rem;
   }
-  :global(.grid) {
+  .grid {
     display: inline-grid;
     grid-auto-flow: column;
     grid-template-rows: auto auto auto;
@@ -103,7 +128,7 @@
     align-items: center;
     stroke-width: 5;
   }
-  :global(.dark .grid) {
+  :global(.dark) .grid {
     stroke: rgb(34, 115, 139);
   }
 
