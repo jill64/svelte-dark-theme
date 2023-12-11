@@ -14,7 +14,7 @@ export const code = ({
   // current theme is '${theme}'
   console.log($theme)
 
-  // current theme is '${setting}'
+  // current setting is '${setting}'
   console.log($setting)
 
   const change_to_${antiTheme} = () => {
