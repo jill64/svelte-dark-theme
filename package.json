@@ -51,13 +51,13 @@
     "lint": "npx eslint && npm run check"
   },
   "peerDependencies": {
-    "@sveltejs/kit": "^1.0.0",
+    "@sveltejs/kit": "^2.0.0",
     "svelte": "^4.0.0"
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
     "@jill64/eslint-config-svelte": "1.0.3",
-    "@jill64/npm-demo-layout": "0.3.7",
+    "@jill64/npm-demo-layout": "0.4.0",
     "@jill64/universal-sanitizer": "1.0.0",
     "@jill64/playwright-config": "2.2.0",
     "@jill64/prettier-config": "1.0.0",
@@ -65,16 +65,17 @@
     "@jill64/svelte-input": "1.6.0",
     "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "3.0.0",
-    "@sveltejs/kit": "1.30.3",
+    "@sveltejs/kit": "2.0.0",
     "svelte": "4.2.8",
     "typescript": "5.3.3",
-    "vite": "5.0.9"
+    "vite": "5.0.9",
+    "@sveltejs/vite-plugin-svelte": "3.0.1"
   },
   "dependencies": {
-    "@jill64/svelte-device-theme": "1.2.4",
-    "@jill64/svelte-html": "1.0.0",
-    "@jill64/svelte-storage": "1.0.1",
-    "svelte-baked-cookie": "0.0.4",
+    "@jill64/svelte-device-theme": "1.2.5",
+    "@jill64/svelte-html": "1.1.0",
+    "@jill64/svelte-storage": "1.1.0",
+    "svelte-baked-cookie": "0.1.0",
     "svelte-feather-icons": "4.0.1",
     "typescanner": "0.5.3"
   }
