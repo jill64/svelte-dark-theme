@@ -15,8 +15,8 @@ dependencies:
     specifier: 1.1.0
     version: 1.1.0(@sveltejs/kit@2.0.2)(svelte@4.2.8)
   svelte-baked-cookie:
-    specifier: 1.0.0
-    version: 1.0.0(@sveltejs/kit@2.0.2)(svelte@4.2.8)
+    specifier: 1.0.2
+    version: 1.0.2(@sveltejs/kit@2.0.2)(svelte@4.2.8)
   svelte-feather-icons:
     specifier: 4.1.0
     version: 4.1.0
@@ -2659,6 +2659,21 @@ packages:
       cookie: 0.6.0
       svelte: 4.2.8
       ts-serde: 1.0.0
+    dev: true
+
+  /svelte-baked-cookie@1.0.2(@sveltejs/kit@2.0.2)(svelte@4.2.8):
+    resolution: {integrity: sha512-8GTdeG0BMyANFOpQ18DdemkLsg+g+kfLqvbj6QESR6Ee6cQo+hqfMZyouQvb4BgO0//T4+4ZB3yWUMsQXVbaag==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@jill64/transform': 1.0.0
+      '@sveltejs/kit': 2.0.2(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
+      '@types/cookie': 0.6.0
+      cookie: 0.6.0
+      svelte: 4.2.8
+      ts-serde: 1.0.0
+    dev: false
 
   /svelte-code-copy@1.0.2(@sveltejs/kit@2.0.2)(svelte@4.2.8):
     resolution: {integrity: sha512-Kuc/psmNV/otFCDr+D7iuBaMs8NI9VwwAXfp+LCrsgY/1ieAdbyZS15j1VslgAkgEpYPG334rviHb14DPJsGfg==}
