@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.1.1
     version: 1.1.1(@sveltejs/kit@2.0.3)(svelte@4.2.8)
   '@jill64/svelte-storage':
-    specifier: 1.1.2
-    version: 1.1.2(@sveltejs/kit@2.0.3)(svelte@4.2.8)
+    specifier: 1.1.3
+    version: 1.1.3(@sveltejs/kit@2.0.3)(svelte@4.2.8)
   svelte-baked-cookie:
     specifier: 1.0.2
     version: 1.0.2(@sveltejs/kit@2.0.3)(svelte@4.2.8)
@@ -501,6 +501,18 @@ packages:
       '@jill64/typed-storage': 2.0.5
       '@sveltejs/kit': 2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       svelte: 4.2.8
+    dev: true
+
+  /@jill64/svelte-storage@1.1.3(@sveltejs/kit@2.0.3)(svelte@4.2.8):
+    resolution: {integrity: sha512-taWwtkFEBHQ/aQYZGwbCr8v4dyIY7WtmInIiXd4ZAmUN+stnA8MfBskix+8JXRRvs1Tp7wRkEPiqs1ZJ3xJAVw==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@jill64/typed-storage': 2.0.6
+      '@sveltejs/kit': 2.0.3(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
+      svelte: 4.2.8
+    dev: false
 
   /@jill64/svelte-toast@1.3.5(@sveltejs/kit@2.0.3)(svelte@4.2.8):
     resolution: {integrity: sha512-I+FFExq+0cqANTivxE8+vZx2ur6pHV7P+5O+4aVEoo4ITEvWu7cBJOJO5IM0AVm/Hsiu2mF6ZXXg3CUIqqZnUg==}
@@ -522,6 +534,13 @@ packages:
     resolution: {integrity: sha512-34O8BaVVTiHNPyRlKlHU2H7n0TU6JyFdqkpAhdIkFRYebVMoRSYoUhcAowVAP9qvutjFVxhHKBEGQxpECdBIHg==}
     dependencies:
       ts-serde: 1.0.0
+    dev: true
+
+  /@jill64/typed-storage@2.0.6:
+    resolution: {integrity: sha512-bUm6Hlb+aCnTldvzqStUfIyLfub5apoT7x4ixfOSAjx/fijkSIJ+mM4/wQsI8FZ1BlfwPFeZT5UDb4cBHTaO6Q==}
+    dependencies:
+      ts-serde: 1.0.2
+    dev: false
 
   /@jill64/universal-sanitizer@1.0.0:
     resolution: {integrity: sha512-+9EGfkGxMv7cXUhYsP7XDdWSqUC63+ta8BiOFUj6MST84lTUSGscFOUSJU+kg6rCUeGp4zsqzRMIEEVsIFXGzA==}
@@ -2822,6 +2841,12 @@ packages:
     resolution: {integrity: sha512-SNjdIkVUqUzfHQ6n+MPDwloWXj7TYYntgJ9xh3Sy0qkrOTJex8Zlz5JkfYkRnPTm1dLvjHJrLbxBmgFY7xJqGg==}
     dependencies:
       devalue: 4.3.2
+
+  /ts-serde@1.0.2:
+    resolution: {integrity: sha512-b9op5U+ucgRn5fu/SzYBZ/Dp6QBdDVv1eHfBkY1+3Hvew2GyIFrkl3eJs53cFAmHu7XxYgonRHX6qgLpckEujw==}
+    dependencies:
+      devalue: 4.3.2
+    dev: false
 
   /tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
