@@ -98,3 +98,11 @@ export const handle = sequence(onRender(), async ({ event, resolve }) => {
   return resolve(event)
 })
 ```
+
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
