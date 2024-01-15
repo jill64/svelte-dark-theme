@@ -12,8 +12,8 @@ dependencies:
     specifier: 1.1.3
     version: 1.1.3(@sveltejs/kit@2.3.2)(svelte@4.2.8)
   '@jill64/svelte-storage':
-    specifier: 1.1.4
-    version: 1.1.4(@sveltejs/kit@2.3.2)(svelte@4.2.8)
+    specifier: 1.1.5
+    version: 1.1.5(@sveltejs/kit@2.3.2)(svelte@4.2.8)
   svelte-baked-cookie:
     specifier: 1.0.7
     version: 1.0.7(@sveltejs/kit@2.3.2)(svelte@4.2.8)
@@ -482,6 +482,18 @@ packages:
       '@jill64/typed-storage': 2.0.6
       '@sveltejs/kit': 2.3.2(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
       svelte: 4.2.8
+    dev: true
+
+  /@jill64/svelte-storage@1.1.5(@sveltejs/kit@2.3.2)(svelte@4.2.8):
+    resolution: {integrity: sha512-R/Gsym5ld6/PQyRMY64sTLUxL+1r1qPNR6pD3jmcJkQKVTcNqYw4o42uvr/zX46aQATfeJ4M/JjuMYwjUR0R0g==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@jill64/typed-storage': 2.0.6
+      '@sveltejs/kit': 2.3.2(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.11)
+      svelte: 4.2.8
+    dev: false
 
   /@jill64/svelte-toast@1.3.8(@sveltejs/kit@2.3.2)(svelte@4.2.8):
     resolution: {integrity: sha512-YA/CG5VoSZ8tI2XKnRNC6Ngvx16uMuqnp4FWrTJbMZn3h1Iuadmp3i20p8EW4ARKEx8Q6H5/EgARdjFp81YjjA==}
