@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@jill64/svelte-device-theme':
-    specifier: 1.2.9
-    version: 1.2.9(@sveltejs/kit@2.3.5)(svelte@4.2.9)
+    specifier: 1.2.10
+    version: 1.2.10(@sveltejs/kit@2.3.5)(svelte@4.2.9)
   '@jill64/svelte-html':
     specifier: 1.1.3
     version: 1.1.3(@sveltejs/kit@2.3.5)(svelte@4.2.9)
@@ -612,6 +612,17 @@ packages:
       typescanner: 0.5.3
     dev: true
 
+  /@jill64/svelte-device-theme@1.2.10(@sveltejs/kit@2.3.5)(svelte@4.2.9):
+    resolution: {integrity: sha512-n5go4xiEFG/z7wc+t3a46MDlU2JWhk+ARuFy3yj5Nja+qPtKCNgn82VkcpjP3dC1vKbVfQFvPSnwmz+mXkykHw==}
+    peerDependencies:
+      svelte: ^4.0.0
+    dependencies:
+      svelte: 4.2.9
+      svelte-mq-store: 2.2.4(@sveltejs/kit@2.3.5)(svelte@4.2.9)
+    transitivePeerDependencies:
+      - '@sveltejs/kit'
+    dev: false
+
   /@jill64/svelte-device-theme@1.2.9(@sveltejs/kit@2.3.5)(svelte@4.2.9):
     resolution: {integrity: sha512-Qr/3aQIhaNpapjAWchChzVoEJZeBkBRDCbn2ZqW/FS0nrX5IhgGHPDYk7SCWmXLvUUBQ1NVBd7CY/uSn/Vv6qw==}
     peerDependencies:
@@ -621,6 +632,7 @@ packages:
       svelte-mq-store: 2.2.3(@sveltejs/kit@2.3.5)(svelte@4.2.9)
     transitivePeerDependencies:
       - '@sveltejs/kit'
+    dev: true
 
   /@jill64/svelte-html@1.1.3(@sveltejs/kit@2.3.5)(svelte@4.2.9):
     resolution: {integrity: sha512-z52rug3r0FlfhzSF/rXU4vcJMOcX1mycDYt2y/AaMljn96jfFdMjb2+SAsMXYnbFhC2cwZmx+UTIyV54kCnurg==}
@@ -2473,6 +2485,17 @@ packages:
     dependencies:
       '@sveltejs/kit': 2.3.5(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.9)(vite@5.0.11)
       svelte: 4.2.9
+    dev: true
+
+  /svelte-mq-store@2.2.4(@sveltejs/kit@2.3.5)(svelte@4.2.9):
+    resolution: {integrity: sha512-4hunUJZXgMC9SdDK16n/l/7CsM2Sc59c1AbLF1wmgNKT+YlxWr9NrIcVJ3AhvkMrOz20QemEraNoWF5P6SuSZg==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@sveltejs/kit': 2.3.5(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.9)(vite@5.0.11)
+      svelte: 4.2.9
+    dev: false
 
   /svelte-writable-derived@3.1.0(svelte@4.2.9):
     resolution: {integrity: sha512-cTvaVFNIJ036vSDIyPxJYivKC7ZLtcFOPm1Iq6qWBDo1fOHzfk6ZSbwaKrxhjgy52Rbl5IHzRcWgos6Zqn9/rg==}
