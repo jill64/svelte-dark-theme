@@ -9,7 +9,7 @@
   export let strokeWidth = 2
   export let iconClass = ''
   export let title = (dark: boolean) =>
-    `Change to ${dark ? 'Dark' : 'Light'} Theme`
+    `Change to ${dark ? 'Light' : 'Dark'} Theme`
 
   $: size = iconSize.toString()
   $: dark = $theme === 'dark'
