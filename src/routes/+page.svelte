@@ -52,7 +52,7 @@
       style:--cell-width="{cell_h}px"
       style:--cell-height="{cell_h}px"
     >
-      <code>
+      <code data-testid="device">
         Device<br />'{$isDark ? 'dark' : 'light'}'
       </code>
       <svg
@@ -63,7 +63,7 @@
       >
         <path d="M {cell_w / 2} {cell_h} V {$mv_h}" fill="transparent" />
       </svg>
-      <code>
+      <code data-testid="setting">
         $setting<br />'{$setting}'
       </code>
 
@@ -82,7 +82,7 @@
       </svg>
 
       <div />
-      <code>
+      <code data-testid="theme">
         $theme<br />'{$theme}'
       </code>
       <div />
