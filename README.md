@@ -107,6 +107,6 @@ export const handle = sequence(onRender(), async ({ event, resolve }) => {
 
 ## License
 
-MIT
+[MIT](LICENSE)
 
 <!----- END GHOST DOCS FOOTER ----->
