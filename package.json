@@ -73,7 +73,7 @@
   },
   "dependencies": {
     "@jill64/svelte-device-theme": "1.2.12",
-    "@jill64/svelte-html": "1.1.6",
+    "@jill64/svelte-html": "1.1.7",
     "@jill64/svelte-storage": "1.1.8",
     "svelte-baked-cookie": "1.0.11",
     "svelte-feather-icons": "4.1.0",
