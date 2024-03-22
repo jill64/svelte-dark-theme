@@ -72,7 +72,7 @@
     "@sveltejs/vite-plugin-svelte": "3.0.2"
   },
   "dependencies": {
-    "@jill64/svelte-device-theme": "1.2.15",
+    "@jill64/svelte-device-theme": "1.2.16",
     "@jill64/svelte-html": "1.1.10",
     "@jill64/svelte-storage": "1.1.14",
     "svelte-baked-cookie": "1.0.16",
