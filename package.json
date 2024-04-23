@@ -74,7 +74,7 @@
   "dependencies": {
     "@jill64/svelte-device-theme": "1.2.19",
     "@jill64/svelte-html": "1.1.14",
-    "@jill64/svelte-storage": "1.1.19",
+    "@jill64/svelte-storage": "1.1.21",
     "svelte-baked-cookie": "1.0.23",
     "svelte-feather-icons": "4.1.0",
     "typescanner": "0.5.3"
