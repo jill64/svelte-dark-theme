@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { setting, theme } from '@jill64/npm-demo-layout'
+  import { theme } from '$lib'
   import { Highlight, HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
   import { javascript as js } from '@jill64/npm-demo-layout/highlight/languages'
-  import { isDark } from '@jill64/svelte-device-theme'
+  import { is } from '@jill64/svelte-device-theme'
   import { Radio } from '@jill64/svelte-input'
   import { MoonIcon, SunIcon } from 'svelte-feather-icons'
   import { spring } from 'svelte/motion'
@@ -17,11 +17,13 @@
   const mc_start_y = spring<number>()
   const mc_start_y2 = spring<number>()
 
-  $: isSync = $setting === 'sync'
+  let isSync = $derived(theme.setting === 'sync')
 
-  $: $mv_h = isSync ? 0 : 100
-  $: $mc_start_y = isSync ? cell_h / 2 : cell_h * 3 - cell_h / 2
-  $: $mc_start_y2 = isSync ? cell_h / 2 : cell_h * 3 - cell_h / 2
+  $effect(() => {
+    $mv_h = isSync ? 0 : 100
+    $mc_start_y = isSync ? cell_h / 2 : cell_h * 3 - cell_h / 2
+    $mc_start_y2 = isSync ? cell_h / 2 : cell_h * 3 - cell_h / 2
+  })
 </script>
 
 <main>
@@ -33,7 +35,7 @@
     style:gap="1rem"
   >
     <fieldset>
-      <Radio list={['dark', 'light', 'sync']} bind:value={$setting} let:item>
+      {#snippet label(item)}
         <span class="item">
           {#if item === 'dark'}
             <MoonIcon /> Dark
@@ -43,7 +45,8 @@
             ☯ Sync
           {/if}
         </span>
-      </Radio>
+      {/snippet}
+      <Radio list={['dark', 'light', 'sync']} {label} bind:value={theme.setting} />
     </fieldset>
   </aside>
   <output>
@@ -53,7 +56,7 @@
       style:--cell-height="{cell_h}px"
     >
       <code data-testid="device">
-        Device<br />'{$isDark ? 'dark' : 'light'}'
+        Device<br />'{is.dark ? 'dark' : 'light'}'
       </code>
       <svg
         width={cell_w}
@@ -64,7 +67,7 @@
         <path d="M {cell_w / 2} {cell_h} V {$mv_h}" fill="transparent" />
       </svg>
       <code data-testid="setting">
-        $setting<br />'{$setting}'
+        $setting<br />'{theme.setting}'
       </code>
 
       <svg
@@ -81,18 +84,18 @@
         />
       </svg>
 
-      <div />
+      <div></div>
       <code data-testid="theme">
-        $theme<br />'{$theme}'
+        $theme<br />'{theme.value}'
       </code>
-      <div />
+      <div></div>
     </div>
     <div style:overflow-x="auto" style:font-size="large">
       <HighlightSvelte code={rootCode.trim()} />
       <HighlightSvelte
         code={code({
-          theme: $theme,
-          setting: $setting
+          theme: theme.value,
+          setting: theme.setting
         }).trim()}
       />
       <Highlight code={ssrCode} language={js} />

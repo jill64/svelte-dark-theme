@@ -12,13 +12,13 @@ export const code = ({
   import { theme } from '@jill64/svelte-dark-theme'
 
   // current theme is '${theme}'
-  console.log($theme)
+  console.log(theme)
 
   // current setting is '${setting}'
-  console.log($setting)
+  console.log(setting.value)
 
   const change_to_${antiTheme} = () => {
-    $theme = '${antiTheme}'
+    setting.value = '${antiTheme}'
   }
 </script>
 `

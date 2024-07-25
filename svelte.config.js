@@ -5,13 +5,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 const config = {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter(),
-    alias:
-      process.env.NODE_ENV === 'production'
-        ? {}
-        : {
-            '@jill64/svelte-dark-theme': './dist/index.js'
-          }
+    adapter: adapter()
   }
 }
 

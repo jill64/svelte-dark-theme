@@ -1,24 +1,31 @@
 <script lang="ts">
   import { MoonIcon, SunIcon } from 'svelte-feather-icons'
-  import { flip } from './flip'
-  import { theme } from './store/theme'
+  import { flip } from './flip.svelte'
+  import { theme } from './store/theme.svelte'
 
-  export let style = ''
-  export let Class = ''
-  export let iconSize = 24
-  export let strokeWidth = 2
-  export let iconClass = ''
-  export let title = (dark: boolean) =>
-    `Change to ${dark ? 'Light' : 'Dark'} Theme`
+  let {
+    style = '',
+    class: Class = '',
+    iconSize = 24,
+    strokeWidth = 2,
+    iconClass = '',
+    title = (dark: boolean) => `Change to ${dark ? 'Light' : 'Dark'} Theme`
+  }: {
+    style: string
+    class: string
+    iconSize: number
+    strokeWidth: number
+    iconClass: string
+    title: (dark: boolean) => string
+  } = $props()
 
-  $: size = iconSize.toString()
-  $: dark = $theme === 'dark'
+  let size = $derived(iconSize.toString())
+  let dark = $derived(theme.value === 'dark')
 </script>
 
 <button
-  on:click={$flip}
+  onclick={flip}
   title={title(dark)}
-  on:click
   {style}
   class="{Class} {dark ? 'dark' : ''}"
 >
