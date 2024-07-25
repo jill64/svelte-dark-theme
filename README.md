@@ -18,18 +18,18 @@
 
 ```svelte
 <script>
-  import { ThemeManager, setting, theme } from '@jill64/svelte-dark-theme'
+  import { ThemeManager, theme } from '@jill64/svelte-dark-theme'
 
   const setToDark = () => {
-    $setting = 'dark'
+    theme.setting = 'dark'
   }
 
   const setToLight = () => {
-    $setting = 'light'
+    theme.setting = 'light'
   }
 
   const setToDeviceSync = () => {
-    $setting = 'sync'
+    theme.setting = 'sync'
   }
 </script>
 
@@ -37,10 +37,10 @@
 <ThemeManager />
 
 <!-- Theme Store ('dark' | 'light') -->
-<div>Theme: {$theme}</div>
+<div>Theme: {theme.value}</div>
 
 <!-- Theme Store ('dark' | 'light' | 'sync') -->
-<div>Setting: {$setting}</div>
+<div>Setting: {theme.setting}</div>
 
 <style>
   :global(body.light) {
@@ -71,7 +71,7 @@ Each call to the function switches the `setting` according to the following rule
   import { flip } from '@jill64/svelte-dark-theme'
 </script>
 
-<button on:click={$filp}> flip theme </button>
+<button onclick={filp}> flip theme </button>
 ```
 
 ## SSR (Optional)
