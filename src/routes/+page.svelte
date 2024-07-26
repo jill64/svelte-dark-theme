@@ -46,7 +46,11 @@
           {/if}
         </span>
       {/snippet}
-      <Radio list={['dark', 'light', 'sync']} {label} bind:value={theme.setting} />
+      <Radio
+        list={['dark', 'light', 'sync']}
+        {label}
+        bind:value={theme.setting}
+      />
     </fieldset>
   </aside>
   <output>
