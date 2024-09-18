@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-dark-theme",
-  "version": "2.3.94",
+  "version": "2.3.95",
   "description": "☯ Dark Theme Manager for SvelteKit",
   "type": "module",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-dark-theme.git",
-    "image": "https://opengraph.githubassets.com/240e0e0bbf37de80af1f78ccec85992866c314bbf8689af3235ac9b90b0eac2f/jill64/svelte-dark-theme"
+    "image": "https://opengraph.githubassets.com/049edcd4b6e1cbb7756edcac2142b01e1aff8f1bd005088f6db1368f8a54a8f5/jill64/svelte-dark-theme"
   },
   "keywords": [
     "dark",
@@ -72,7 +72,7 @@
     "@sveltejs/vite-plugin-svelte": "3.1.2"
   },
   "dependencies": {
-    "@jill64/svelte-device-theme": "1.2.25",
+    "@jill64/svelte-device-theme": "1.2.26",
     "@jill64/svelte-html": "1.1.20",
     "@jill64/svelte-storage": "1.2.2",
     "svelte-baked-cookie": "1.0.31",
