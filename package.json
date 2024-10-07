@@ -28,8 +28,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jill64/svelte-dark-theme.git",
-    "image": "https://opengraph.githubassets.com/21bb6bad1ad467623bcf381df61fe4f5c92458f3dcf4d6fa8bcd51ac39a62806/jill64/svelte-dark-theme"
+    "url": "git+https://github.com/jill64/svelte-dark-theme.git",
+    "image": "https://opengraph.githubassets.com/9d895d2ac7857a7637cff7df7d0de790f22ae1e6e3afaab8ca1eb21621dfdad6/jill64/svelte-dark-theme"
   },
   "keywords": [
     "dark",
