@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-dark-theme",
-  "version": "2.3.101",
+  "version": "2.3.102",
   "description": "☯ Dark Theme Manager for SvelteKit",
   "type": "module",
   "main": "dist/index.js",
@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-dark-theme.git",
-    "image": "https://opengraph.githubassets.com/c2b879867044098be978cfc2578c4ebb443ef597a70bb6cb98cdde8665d3bb46/jill64/svelte-dark-theme"
+    "image": "https://opengraph.githubassets.com/c8903aec7341da629b392913c478d104b4950916db339c5d40bdf4f5c0ca8c48/jill64/svelte-dark-theme"
   },
   "keywords": [
     "dark",
@@ -65,7 +65,7 @@
     "@jill64/svelte-input": "1.6.38",
     "@playwright/test": "1.48.0",
     "@sveltejs/adapter-cloudflare": "4.7.4",
-    "@sveltejs/kit": "2.6.1",
+    "@sveltejs/kit": "2.8.3",
     "svelte": "4.2.19",
     "typescript": "5.7.2",
     "vite": "5.4.11",
