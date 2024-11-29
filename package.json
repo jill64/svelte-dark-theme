@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-dark-theme.git",
-    "image": "https://opengraph.githubassets.com/337bec7ba002a57a213da3c517f07f11d047c032eee98d92423826f9b0b39c3e/jill64/svelte-dark-theme"
+    "image": "https://opengraph.githubassets.com/cd07bfa567db70c3b5760faf6fc446b3ec58710f62da1589e8928ae4986aa0e3/jill64/svelte-dark-theme"
   },
   "keywords": [
     "dark",
@@ -64,7 +64,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "1.7.16",
     "@jill64/svelte-input": "1.6.39",
     "@playwright/test": "1.48.0",
-    "@sveltejs/adapter-cloudflare": "4.7.4",
+    "@sveltejs/adapter-cloudflare": "4.8.0",
     "@sveltejs/kit": "2.8.3",
     "svelte": "4.2.19",
     "typescript": "5.7.2",
