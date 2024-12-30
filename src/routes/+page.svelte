@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { setting, theme } from '@jill64/npm-demo-layout'
+  import { setting, is as theme } from '$lib'
+  import type { ThemeValue } from '$lib/types/ThemeValue'
   import { Highlight, HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
   import { javascript as js } from '@jill64/npm-demo-layout/highlight/languages'
   import { is } from '@jill64/svelte-device-theme'
@@ -17,7 +18,7 @@
   let mc_start_y = new Spring<number>(cell_h / 2)
   let mc_start_y2 = new Spring<number>(cell_h / 2)
 
-  let isSync = $derived($setting === 'sync')
+  let isSync = $derived(setting.see === 'sync')
 
   $effect(() => {
     if (isSync) {
@@ -41,7 +42,11 @@
     style:gap="1rem"
   >
     <fieldset>
-      <Radio list={['dark', 'light', 'sync']} bind:value={$setting}>
+      <Radio
+        list={['dark', 'light', 'sync']}
+        value={setting.see}
+        onSelect={(x) => setting.set(x as ThemeValue)}
+      >
         {#snippet children(item)}
           <span class="item">
             {#if item === 'dark'}
@@ -74,7 +79,7 @@
         <path d="M {cell_w / 2} {cell_h} V {mv_h.current}" fill="transparent" />
       </svg>
       <code data-testid="setting">
-        $setting<br />'{$setting}'
+        $setting<br />'{setting.see}'
       </code>
 
       <svg
@@ -93,7 +98,7 @@
 
       <div></div>
       <code data-testid="theme">
-        $theme<br />'{$theme}'
+        $theme<br />'{theme.dark ? 'dark' : 'light'}'
       </code>
       <div></div>
     </div>
@@ -101,8 +106,8 @@
       <HighlightSvelte code={rootCode.trim()} />
       <HighlightSvelte
         code={code({
-          theme: $theme,
-          setting: $setting
+          dark: theme.dark,
+          setting: setting.see
         }).trim()}
       />
       <Highlight code={ssrCode} language={js} />
