@@ -11,9 +11,7 @@ let server = $state<ThemeValue>('light')
 
 let local = storage({ 'svelte-dark-theme': enums(themeSetting, 'sync') })
 
-let localTheme = $state<ThemeSetting>('sync')
-
-localTheme = $derived(local['svelte-dark-theme'])
+let localTheme = $derived(local['svelte-dark-theme'])
 
 let setting = $state<ThemeSetting>(localTheme)
 

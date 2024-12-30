@@ -1,6 +1,6 @@
 <script lang="ts">
   import { MoonIcon, SunIcon } from 'svelte-feather-icons'
-  import { flip } from './flip'
+  import { flip } from './flip.svelte'
   import { store } from './store.svelte'
 
   let {
@@ -24,7 +24,7 @@
 </script>
 
 <button
-  onclick={flip}
+  onclick={flip.theme}
   title={title(dark)}
   {style}
   class="{Class} {dark ? 'dark' : ''}"

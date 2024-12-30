@@ -1,21 +1,15 @@
-export const code = ({
-  theme,
-  setting
-}: {
-  theme: string
-  setting: string
-}) => {
-  const antiTheme = theme === 'dark' ? 'light' : 'dark'
+export const code = ({ dark, setting }: { dark: boolean; setting: string }) => {
+  const antiTheme = dark ? 'light' : 'dark'
 
   return /* html */ `
 <script>
-  import { theme } from '@jill64/svelte-dark-theme'
+  import { is } from '@jill64/svelte-dark-theme'
 
-  // current theme is '${theme}'
-  console.log($theme)
+  // current theme is dark = ${dark}
+  console.log(is.dark)
 
   // current setting is '${setting}'
-  console.log($setting)
+  console.log(setting.see)
 
   const change_to_${antiTheme} = () => {
     $theme = '${antiTheme}'
