@@ -18,7 +18,7 @@
 
 ```svelte
 <script>
-  import { ThemeManager, setting, is } from '@jill64/svelte-dark-theme'
+  import { ThemeManager, setting, theme } from '@jill64/svelte-dark-theme'
 
   const setToDark = () => {
     setting.set('dark')
@@ -37,8 +37,9 @@
 <ThemeManager />
 
 <!-- Theme Store (true | false) -->
-<div>is dark: {is.dark}</div>
-<div>is light: {is.light}</div>
+<div>is dark: {theme.isDark}</div>
+<div>is light: {theme.isLight}</div>
+<div>value: {theme.value}</div>
 
 <!-- Theme Store ('dark' | 'light' | 'sync') -->
 <div>Setting: {setting.see}</div>
@@ -72,7 +73,7 @@ Each call to the function switches the `setting` according to the following rule
   import { flip } from '@jill64/svelte-dark-theme'
 </script>
 
-<button on:click={flip.theme}> flip theme </button>
+<button onclick={flip.theme}> flip theme </button>
 ```
 
 ## SSR (Optional)
