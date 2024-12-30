@@ -1,11 +1,39 @@
 <script lang="ts">
-  import { Layout } from '@jill64/npm-demo-layout'
-  import README from '../../README.md?raw'
-  import packageJson from '../../package.json'
+  import { FlipButton, ThemeManager } from '$lib'
+  import GitHubLogo from './GitHubLogo.svelte'
 
   let { children } = $props()
 </script>
 
-<Layout {packageJson} {README}>
-  {@render children()}
-</Layout>
+<ThemeManager />
+
+<header>
+  <hgroup>
+    <h1>svelte-dark-theme</h1>
+    <p>☯ Dark Theme Manager for SvelteKit</p>
+  </hgroup>
+  <FlipButton />
+  <GitHubLogo />
+</header>
+
+{@render children()}
+
+<style>
+  :global(body) {
+    font-family: sans-serif;
+    padding: 0 1rem;
+  }
+  :global(.dark body) {
+    background-color: #161616;
+    color: whitesmoke;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  hgroup {
+    margin-right: auto;
+  }
+</style>

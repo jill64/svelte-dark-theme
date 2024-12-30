@@ -5,7 +5,7 @@
   import { bakery } from './bakery'
   import { store } from './store.svelte'
 
-  let { key = 'svelte-dark-theme' }: { key: string } = $props()
+  let { key = 'svelte-dark-theme' }: { key?: string } = $props()
 
   const cookies = bakery(key).rebake()
 

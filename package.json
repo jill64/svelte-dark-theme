@@ -40,14 +40,14 @@
     "theme"
   ],
   "scripts": {
-    "dev": "npm run build && vite dev",
+    "dev": "vite dev",
     "build": "vite build && npm run package",
     "preview": "npm run build && vite preview",
     "prepack": "npm run build",
     "test": "playwright test",
     "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
     "check": "svelte-kit sync && npx svelte-check",
-    "format": "npx @jill64/psx",
+    "format": "npx psvx",
     "lint": "npx eslint && npm run check"
   },
   "peerDependencies": {
