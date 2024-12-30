@@ -2,10 +2,10 @@
   import { setting, theme } from '@jill64/npm-demo-layout'
   import { Highlight, HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
   import { javascript as js } from '@jill64/npm-demo-layout/highlight/languages'
-  import { isDark } from '@jill64/svelte-device-theme'
+  import { is } from '@jill64/svelte-device-theme'
   import { Radio } from '@jill64/svelte-input'
   import { MoonIcon, SunIcon } from 'svelte-feather-icons'
-  import { spring } from 'svelte/motion'
+  import { Spring } from 'svelte/motion'
   import { code } from './code'
   import { rootCode } from './rootCode'
   import { ssrCode } from './ssrCode'
@@ -13,15 +13,23 @@
   const cell_h = 100
   const cell_w = 100
 
-  const mv_h = spring<number>()
-  const mc_start_y = spring<number>()
-  const mc_start_y2 = spring<number>()
+  let mv_h = new Spring<number>(0)
+  let mc_start_y = new Spring<number>(cell_h / 2)
+  let mc_start_y2 = new Spring<number>(cell_h / 2)
 
-  $: isSync = $setting === 'sync'
+  let isSync = $derived($setting === 'sync')
 
-  $: $mv_h = isSync ? 0 : 100
-  $: $mc_start_y = isSync ? cell_h / 2 : cell_h * 3 - cell_h / 2
-  $: $mc_start_y2 = isSync ? cell_h / 2 : cell_h * 3 - cell_h / 2
+  $effect(() => {
+    if (isSync) {
+      mv_h.set(0)
+      mc_start_y.set(cell_h / 2)
+      mc_start_y2.set(cell_h / 2)
+    } else {
+      mv_h.set(100)
+      mc_start_y.set(cell_h * 3 - cell_h / 2)
+      mc_start_y2.set(cell_h * 3 - cell_h / 2)
+    }
+  })
 </script>
 
 <main>
@@ -33,16 +41,18 @@
     style:gap="1rem"
   >
     <fieldset>
-      <Radio list={['dark', 'light', 'sync']} bind:value={$setting} let:item>
-        <span class="item">
-          {#if item === 'dark'}
-            <MoonIcon /> Dark
-          {:else if item === 'light'}
-            <SunIcon /> Light
-          {:else}
-            ☯ Sync
-          {/if}
-        </span>
+      <Radio list={['dark', 'light', 'sync']} bind:value={$setting}>
+        {#snippet children(item)}
+          <span class="item">
+            {#if item === 'dark'}
+              <MoonIcon /> Dark
+            {:else if item === 'light'}
+              <SunIcon /> Light
+            {:else}
+              ☯ Sync
+            {/if}
+          </span>
+        {/snippet}
       </Radio>
     </fieldset>
   </aside>
@@ -53,7 +63,7 @@
       style:--cell-height="{cell_h}px"
     >
       <code data-testid="device">
-        Device<br />'{$isDark ? 'dark' : 'light'}'
+        Device<br />'{is.dark ? 'dark' : 'light'}'
       </code>
       <svg
         width={cell_w}
@@ -61,7 +71,7 @@
         viewBox="0 0 {cell_w} {cell_h}"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M {cell_w / 2} {cell_h} V {$mv_h}" fill="transparent" />
+        <path d="M {cell_w / 2} {cell_h} V {mv_h.current}" fill="transparent" />
       </svg>
       <code data-testid="setting">
         $setting<br />'{$setting}'
@@ -75,17 +85,17 @@
         style:grid-row="1 / span 3"
       >
         <path
-          d="M 0 {$mc_start_y} C {cell_w} {$mc_start_y2}, 0 {cell_h *
+          d="M 0 {mc_start_y.current} C {cell_w} {mc_start_y2.current}, 0 {cell_h *
             1.5}, {cell_w} {cell_h * 1.5}"
           fill="transparent"
         />
       </svg>
 
-      <div />
+      <div></div>
       <code data-testid="theme">
         $theme<br />'{$theme}'
       </code>
-      <div />
+      <div></div>
     </div>
     <div style:overflow-x="auto" style:font-size="large">
       <HighlightSvelte code={rootCode.trim()} />

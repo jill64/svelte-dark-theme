@@ -1,8 +1,7 @@
 import { apply } from '@jill64/svelte-html'
 import type { Handle } from '@sveltejs/kit'
 import { bakery } from './bakery'
-import { server } from './store/server'
-import { setting } from './store/setting'
+import { store } from './store.svelte'
 import { isThemeValue } from './util/isThemeValue'
 
 export const onRender = (options?: { cookieKey?: string }): Handle => {
@@ -18,13 +17,13 @@ export const onRender = (options?: { cookieKey?: string }): Handle => {
     }
 
     const { bakedCookies } = bakery(cookieKey).bake(cookies)
-    const obj = bakedCookies[cookieKey].get()
+    const obj = bakedCookies[cookieKey]
 
-    setting.set(obj.setting)
+    store.setting = obj.setting
 
     const value = isThemeValue(obj.setting) ? obj.setting : obj.media
 
-    server.set(value)
+    store.server = value
 
     return resolve(event, {
       transformPageChunk: apply({
