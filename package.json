@@ -29,11 +29,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-dark-theme.git",
-    "image": "https://opengraph.githubassets.com/3dc4e6394cac08be8ebfd0ea34c6486cdf5b5dc83309da018592d39082f6ed74/jill64/svelte-dark-theme"
+    "image": "https://opengraph.githubassets.com/21e4c0e58100a04053f1653b76622f7d653e4773184b84ef7b16251bea6852b3/jill64/svelte-dark-theme"
   },
   "keywords": [
     "dark",
     "dark-mode",
+    "library",
     "ssr",
     "svelte",
     "sveltekit",
