@@ -1,10 +1,13 @@
 import { store } from './store.svelte'
 
-export const is = {
-  get dark() {
+export const theme = {
+  get isDark() {
     return store.theme === 'dark'
   },
-  get light() {
+  get isLight() {
     return store.theme === 'light'
+  },
+  get value() {
+    return store.theme
   }
 }
