@@ -15,7 +15,7 @@ let localTheme = $state<ThemeSetting>('sync')
 
 localTheme = $derived(local['svelte-dark-theme'])
 
-let setting = $state<ThemeSetting>('sync')
+let setting = $state<ThemeSetting>(localTheme)
 
 let theme = $derived(
   browser
