@@ -62,20 +62,20 @@
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.1",
-    "@jill64/svelte-input": "1.6.43",
-    "@playwright/test": "1.48.0",
+    "@jill64/svelte-input": "2.0.0",
+    "@playwright/test": "1.49.1",
     "@sveltejs/adapter-cloudflare": "5.0.0",
     "@sveltejs/kit": "2.15.1",
-    "svelte": "4.2.19",
+    "svelte": "5.16.0",
     "typescript": "5.7.2",
-    "vite": "5.4.11",
-    "@sveltejs/vite-plugin-svelte": "3.1.2"
+    "vite": "6.0.6",
+    "@sveltejs/vite-plugin-svelte": "5.0.3"
   },
   "dependencies": {
-    "@jill64/svelte-device-theme": "1.2.27",
-    "@jill64/svelte-html": "1.1.20",
-    "@jill64/svelte-storage": "1.2.2",
-    "svelte-baked-cookie": "1.1.4",
+    "@jill64/svelte-device-theme": "2.0.1",
+    "@jill64/svelte-html": "2.0.0",
+    "@jill64/svelte-storage": "2.0.0",
+    "svelte-baked-cookie": "2.0.1",
     "svelte-feather-icons": "4.2.0",
     "typescanner": "0.5.3"
   }
