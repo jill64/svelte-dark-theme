@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { setting, is as theme } from '$lib'
+  import { setting, theme } from '$lib'
   import type { ThemeValue } from '$lib/types/ThemeValue'
   import { Highlight, HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
   import { javascript as js } from '@jill64/npm-demo-layout/highlight/languages'
@@ -98,7 +98,7 @@
 
       <div></div>
       <code data-testid="theme">
-        $theme<br />'{theme.dark ? 'dark' : 'light'}'
+        $theme<br />'{theme.isDark ? 'dark' : 'light'}'
       </code>
       <div></div>
     </div>
@@ -106,7 +106,7 @@
       <HighlightSvelte code={rootCode.trim()} />
       <HighlightSvelte
         code={code({
-          dark: theme.dark,
+          theme: theme.value,
           setting: setting.see
         }).trim()}
       />

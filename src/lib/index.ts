@@ -1,6 +1,6 @@
 export { flip } from './flip.svelte'
 export { default as FlipButton } from './FlipButton.svelte'
-export { is } from './is.svelte'
+export { theme } from './theme.svelte'
 export { onRender } from './onRender'
 export { setting } from './set.svelte'
 export { default as ThemeManager } from './ThemeManager.svelte'
