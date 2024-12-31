@@ -1,10 +1,12 @@
 <script lang="ts">
-  import { FlipButton, ThemeManager } from '$lib'
+  import { FlipButton, ThemeManager, theme } from '$lib'
+  import { HighlightSwitcher } from 'svelte-highlight-switcher'
   import GitHubLogo from './GitHubLogo.svelte'
 
   let { children } = $props()
 </script>
 
+<HighlightSwitcher name={theme.isDark ? 'githubDark' : 'github'} />
 <ThemeManager />
 
 <header>
