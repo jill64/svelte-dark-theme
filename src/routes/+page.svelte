@@ -1,8 +1,8 @@
 <script lang="ts">
   import { setting, theme } from '$lib'
   import type { ThemeValue } from '$lib/types/ThemeValue'
-  import { Highlight, HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
-  import { javascript as js } from '@jill64/npm-demo-layout/highlight/languages'
+  import { Highlight, HighlightSvelte } from 'svelte-highlight'
+  import { javascript as js } from 'svelte-highlight/languages'
   import { is } from '@jill64/svelte-device-theme'
   import { Radio } from '@jill64/svelte-input'
   import { MoonIcon, SunIcon } from 'svelte-feather-icons'
