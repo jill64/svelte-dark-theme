@@ -18,8 +18,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2)
       svelte-baked-cookie:
-        specifier: 2.0.1
-        version: 2.0.1(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2)
+        specifier: 2.0.2
+        version: 2.0.2(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2)
       svelte-feather-icons:
         specifier: 4.2.0
         version: 4.2.0
@@ -1519,8 +1519,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  svelte-baked-cookie@2.0.1:
-    resolution: {integrity: sha512-D15EEwz0Je7AVFW4znFSsAVWov7wtknlI7PxBGPuRaUwciIID870dsLHJqNiDVtlgNtt+gXA4vWwDYGYv4+cbw==}
+  svelte-baked-cookie@2.0.2:
+    resolution: {integrity: sha512-fPXKrSq5ScDq7hnibAHEzsYG7rAtZ8KqNLZn65yb9WEuE4hGVTz8SuZHhxk888ZxX5Jovj+SLKBkYyd/KcIRow==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0 || ^5.0.0
@@ -3074,7 +3074,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-baked-cookie@2.0.1(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2):
+  svelte-baked-cookie@2.0.2(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2):
     dependencies:
       '@jill64/transform': 1.0.4
       '@sveltejs/kit': 2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5)))(svelte@5.16.2)(vite@6.0.10(@types/node@22.5.5))
