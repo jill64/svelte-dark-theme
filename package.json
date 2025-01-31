@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-dark-theme.git",
-    "image": "https://opengraph.githubassets.com/ce46142a49b1413eb00db10e1d4dba39fced050e8be30aca7a7756ce192bd285/jill64/svelte-dark-theme"
+    "image": "https://opengraph.githubassets.com/861851e9f98242c1a0b03db8f5a7e6326a66be331666cd601caa47688bd38e91/jill64/svelte-dark-theme"
   },
   "keywords": [
     "dark",
@@ -60,7 +60,7 @@
     "@jill64/eslint-config-svelte": "2.0.5",
     "svelte-highlight": "7.8.2",
     "svelte-highlight-switcher": "1.3.5",
-    "@jill64/universal-sanitizer": "1.4.0",
+    "@jill64/universal-sanitizer": "1.4.1",
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
