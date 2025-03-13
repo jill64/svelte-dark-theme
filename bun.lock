@@ -16,7 +16,7 @@
         "@jill64/playwright-config": "3.0.0",
         "@jill64/prettier-config": "1.0.0",
         "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
-        "@jill64/svelte-input": "2.0.2",
+        "@jill64/svelte-input": "2.0.3",
         "@playwright/test": "1.51.0",
         "@sveltejs/adapter-cloudflare": "5.0.3",
         "@sveltejs/kit": "2.19.0",
@@ -188,7 +188,7 @@
 
     "@jill64/svelte-html": ["@jill64/svelte-html@2.0.0", "", { "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-9B1WV8IgABlLxIH+X6dIZZKD2szEVnXryl9xeXHuVlP9ygSTVbP7X2B3KN/yQPEe2nUmi0ersDrfyySo7hdr6Q=="],
 
-    "@jill64/svelte-input": ["@jill64/svelte-input@2.0.2", "", { "dependencies": { "@jill64/svelte-observer": "0.0.1", "bignumber.js": "9.1.2", "svelte-loading-spinners": "0.3.6" }, "peerDependencies": { "svelte": "^5.0.0" } }, "sha512-oJEmMS9NhyjRerbSoZ5Bgv/U+TJs3sXCwoWot8cKswG+3MS1i2YT12WHPHD903mPqWOufdd9ZucEt4Gl9KtigQ=="],
+    "@jill64/svelte-input": ["@jill64/svelte-input@2.0.3", "", { "dependencies": { "@jill64/svelte-observer": "0.0.1", "bignumber.js": "9.1.2", "svelte-loading-spinners": "0.3.6" }, "peerDependencies": { "svelte": "^5.0.0" } }, "sha512-54GJKuBdwCbPY0vng67v7xYbMr68E/ey+dMRpRkAvYBc3qeIh9EpzNRp0jmd5x71CcdbkB48U85enTm0ohGq+A=="],
 
     "@jill64/svelte-observer": ["@jill64/svelte-observer@0.0.1", "", { "peerDependencies": { "svelte": "^5.0.0" } }, "sha512-M+lfGrvfYM9C9svCKXvywurORtBBeSH61eyJ092yJpGlDawIiE/VWu5/L5Drr1wYUs/p176+NEsbzKnjWHgS1Q=="],
 
