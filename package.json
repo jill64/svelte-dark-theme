@@ -42,14 +42,14 @@
   ],
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && npm run package",
-    "preview": "npm run build && vite preview",
-    "prepack": "npm run build",
+    "build": "vite build && bun run package",
+    "preview": "bun run build && vite preview",
+    "prepack": "bun run build",
     "test": "playwright test",
-    "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
-    "check": "svelte-kit sync && npx svelte-check",
-    "format": "npx psvx",
-    "lint": "npx eslint && npm run check"
+    "package": "svelte-kit sync && bunx @sveltejs/package && bunx publint",
+    "check": "svelte-kit sync && bunx svelte-check",
+    "format": "bunx psvx",
+    "lint": "bunx eslint && bun run check"
   },
   "peerDependencies": {
     "@sveltejs/kit": "^2.0.0",

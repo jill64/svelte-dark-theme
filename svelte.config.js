@@ -10,3 +10,9 @@ const config = {
 }
 
 export default config
+/*
+Update by azilamo
+Comment by azilamo
+(pnpm to bun)
+いぇーいお母さんみってるぅ？？？？？
+*/
