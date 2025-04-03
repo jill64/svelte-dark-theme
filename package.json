@@ -29,7 +29,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-dark-theme.git",
-    "image": "https://opengraph.githubassets.com/ef672b9d481a5842e3bc245107f5139bdc524811083736dd262d8265bf699101/jill64/svelte-dark-theme"
+    "image": "https://opengraph.githubassets.com/cc4e54c5efe5f9d1ac605875e5120ea4f0aa2e6694092b180ec1b40bbd9230d3/jill64/svelte-dark-theme"
   },
   "keywords": [
     "dark",
@@ -69,7 +69,7 @@
     "@sveltejs/kit": "2.20.1",
     "svelte": "5.23.0",
     "typescript": "5.8.2",
-    "vite": "6.2.4",
+    "vite": "6.2.5",
     "@sveltejs/vite-plugin-svelte": "5.0.3"
   },
   "dependencies": {
