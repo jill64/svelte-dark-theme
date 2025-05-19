@@ -76,7 +76,7 @@
     "@jill64/svelte-device-theme": "2.0.2",
     "@jill64/svelte-html": "2.0.0",
     "@jill64/svelte-storage": "2.0.0",
-    "svelte-baked-cookie": "2.0.3",
+    "svelte-baked-cookie": "2.0.4",
     "svelte-feather-icons": "4.2.0",
     "typescanner": "0.5.3"
   }
